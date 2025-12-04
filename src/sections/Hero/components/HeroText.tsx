@@ -17,7 +17,13 @@ export const HeroText = () => {
           Offering professional fence installation, fence repairs, decking, gates, sheds, and garden rooms in Ayrshire and Glasgow.
         </div>
       </div>
-      <div className="items-center box-border caret-transparent gap-x-6 flex blur-0 flex-wrap gap-y-6 mt-7 md:gap-x-8 md:gap-y-8 md:mt-8">
+    </div>
+  );
+};
+
+export const HeroButtons = () => {
+  return (
+    <div className="items-center box-border caret-transparent gap-x-6 flex blur-0 flex-wrap gap-y-6 mt-7 md:gap-x-8 md:gap-y-8 md:mt-8">
         <div className="box-border caret-transparent flex">
           <a
             href="/contact"
@@ -72,7 +78,6 @@ export const HeroText = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
 

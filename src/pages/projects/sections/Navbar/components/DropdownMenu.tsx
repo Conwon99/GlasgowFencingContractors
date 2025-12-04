@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const DropdownMenu = () => {
   return (
     <div className="relative box-border caret-transparent block max-w-[1540px] text-left z-[900] md:inline-block">
@@ -14,36 +12,36 @@ export const DropdownMenu = () => {
       </div>
       <nav className="absolute items-start box-border caret-transparent gap-x-2.5 hidden flex-col justify-start min-w-full gap-y-2.5 pt-[5px] md:min-w-[230px] md:pt-5">
         <div className="items-start bg-white box-border caret-transparent gap-x-2.5 flex-col justify-start gap-y-2.5 border border-slate-200 pt-5 pb-2.5 px-5 rounded-[20px] border-solid">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="relative text-gray-900 box-border caret-transparent block text-nowrap align-top w-full mb-2.5 mx-auto hover:decoration-transparent"
           >
             Home
-          </Link>
-          <Link
-            to="/about"
+          </a>
+          <a
+            href="/about"
             className="relative box-border caret-transparent block text-nowrap align-top w-full mb-2.5 mx-auto hover:text-gray-900 hover:decoration-transparent hover:border-gray-900"
           >
             About
-          </Link>
-          <Link
-            to="/projects"
+          </a>
+          <a
+            href="/projects"
             className="relative text-gray-900 box-border caret-transparent block text-nowrap align-top w-full mb-2.5 mx-auto hover:decoration-transparent"
           >
             Projects
-          </Link>
-          <Link
-            to="/services"
+          </a>
+          <a
+            href="/services"
             className="relative box-border caret-transparent block text-nowrap align-top w-full mb-2.5 mx-auto hover:text-gray-900 hover:decoration-transparent hover:border-gray-900"
           >
             Services
-          </Link>
-          <Link
-            to="/contact"
+          </a>
+          <a
+            href="/contact"
             className="relative box-border caret-transparent block text-nowrap align-top w-full mb-2.5 mx-auto hover:text-gray-900 hover:decoration-transparent hover:border-gray-900"
           >
             Contact
-          </Link>
+          </a>
         </div>
       </nav>
     </div>

@@ -85,7 +85,7 @@ function generateSitemap(): string {
     ...staticPages,
     ...servicePages.map(slug => `/service/${slug}`),
     ...projectSlugs.map(slug => `/project/${slug}`),
-    ...categoryPages,
+    ...categoryPages.map(page => `/${page}`),
   ];
 
   const urls = allPages.map(page => {
@@ -96,7 +96,7 @@ function generateSitemap(): string {
       priority = '1.0';
     } else if (page === '/services' || mainServicePages.includes(page.replace('/service/', ''))) {
       priority = '0.9';
-    } else if (categoryPages.includes(page)) {
+    } else if (categoryPages.includes(page.replace('/', ''))) {
       priority = '0.85';
     } else if (page.startsWith('/project/')) {
       priority = '0.7';

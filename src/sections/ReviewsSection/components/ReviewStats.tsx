@@ -55,7 +55,7 @@ export const ReviewStats = () => {
         </svg>
       </a>
       <a
-        href="https://www.google.com/maps/place/Ayrshire+Fencing+Group/@55.619,-4.655,15z/data=!4m6!3m5!1s0x0:0x0!8m2!3d55.619!4d-4.655!16s%2Fg%2F11c0x0x0"
+        href="https://share.google/I5rodIQo9AWkx7xTp"
         target="_blank"
         rel="noopener noreferrer"
         className="box-border caret-transparent flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors hover:decoration-transparent"

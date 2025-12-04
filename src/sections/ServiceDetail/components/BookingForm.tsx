@@ -17,7 +17,7 @@ export const BookingForm = () => {
         formData.append("websiteUrl", "www.ayrshirefencinggroup.com");
 
         try {
-          const response = await fetch("https://formspree.io/f/mnnkggzv", {
+          const response = await fetch("https://formspree.io/f/xqarbvgy", {
             method: "POST",
             body: formData,
             headers: {
@@ -54,7 +54,7 @@ export const BookingForm = () => {
           <form
             name="wf-form-Booking-Form"
             aria-label="Booking Form"
-            action="https://formspree.io/f/mnnkggzv"
+            action="https://formspree.io/f/xqarbvgy"
             method="POST"
             className="box-border caret-transparent"
           >

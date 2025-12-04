@@ -48,7 +48,7 @@ export const GoogleBusinessProfileSection = () => {
               </p>
               <div className="box-border caret-transparent flex flex-col gap-3">
                 <a
-                  href="https://www.google.com/maps/place/Ayrshire+Fencing+Group"
+                  href="https://share.google/I5rodIQo9AWkx7xTp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white bg-[#4285F4] hover:bg-[#357ae8] box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-6 py-3 rounded-lg font-semibold transition-colors hover:decoration-transparent"
@@ -63,7 +63,7 @@ export const GoogleBusinessProfileSection = () => {
                   View on Google Maps
                 </a>
                 <a
-                  href="https://www.google.com/maps/place/Ayrshire+Fencing+Group/@55.619,-4.655,15z/data=!4m6!3m5!1s0x0:0x0!8m2!3d55.619!4d-4.655!16s%2Fg%2F11c0x0x0"
+                  href="https://share.google/I5rodIQo9AWkx7xTp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white bg-gray-700 hover:bg-gray-600 box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-6 py-3 rounded-lg font-semibold transition-colors hover:decoration-transparent"
@@ -85,13 +85,12 @@ export const GoogleBusinessProfileSection = () => {
           <div className="box-border caret-transparent">
             <div className="box-border caret-transparent bg-gray-800 rounded-lg overflow-hidden h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.1234567890123!2d-4.655!3d55.619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDM3JzA4LjQiTiA0wrAzOScxOC4wIlc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
                 width="100%"
-                height="100%"
-                style={{ minHeight: '400px', border: 0 }}
+                height="650px"
+                frameBorder="0"
+                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Ayrshire%20Fencing%20Group%2C%20Bonnyton%20Place%2C%20Girdle%20Toll%2C%20Irvine%2C%20UK&maptype=roadmap"
                 allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 title="Ayrshire Fencing Group Location - Irvine, Scotland"
                 className="box-border caret-transparent w-full h-full"
               ></iframe>
@@ -105,7 +104,7 @@ export const GoogleBusinessProfileSection = () => {
             Follow us on Google to stay updated with our latest projects and services
           </p>
           <a
-            href="https://www.google.com/maps/place/Ayrshire+Fencing+Group"
+            href="https://share.google/I5rodIQo9AWkx7xTp"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white bg-[#787e59] hover:bg-[#8a9168] box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-8 py-4 rounded-lg font-semibold text-base md:text-lg transition-colors hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)]"
