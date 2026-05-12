@@ -2,34 +2,40 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
-import { ExperienceSection } from "@/sections/ExperienceSection";
-import { ServicesSection } from "@/sections/ServicesSection";
-import { HomepageContentSection } from "@/sections/HomepageContentSection";
-import { ServiceAreasSection } from "@/sections/ServiceAreasSection";
-import { ProjectsSection } from "@/sections/ProjectsSection";
+import { WhyChooseHomeSection } from "@/sections/WhyChooseHomeSection";
 import { ReviewsSection } from "@/sections/ReviewsSection";
+import { HomepageEstimateSection } from "@/sections/HomepageEstimateSection";
+import { ServicesSection } from "@/sections/ServicesSection";
+import { ProjectsSection } from "@/sections/ProjectsSection";
 import { VideoSection } from "@/sections/VideoSection";
+import { ExperienceSection } from "@/sections/ExperienceSection";
+import { ServiceAreasSection } from "@/sections/ServiceAreasSection";
 import { FAQSection } from "@/sections/FAQSection";
 import { CTASection } from "@/sections/Footer/components/CTASection";
 import { Footer } from "@/sections/Footer";
+import { MobileStickyCall } from "@/components/MobileStickyCall";
 ---
 
 <BaseLayout 
   title="Fence Contractor in Greater Glasgow | Glasgow Fencing Contractors - Quality Fencing & Decking Services"
-  description="Professional fence contractor in Greater Glasgow & Glasgow. Expert fencing, decking, gates, sheds & garden rooms installation. Fully qualified, insured, 13+ years experience. Free quotes available."
+  description="Professional fence contractor in Greater Glasgow. Expert fencing, decking, gates, sheds and garden rooms. Fully qualified, insured, 13+ years experience. Free quotes available."
   canonical="https://www.glasgowfencingcontractors.co.uk/"
 >
-    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope pb-[72px] md:pb-0">
       <Header client:load />
       <Hero client:load />
-      <ExperienceSection client:load />
+      <WhyChooseHomeSection client:load />
+      <ReviewsSection client:load />
+      <HomepageEstimateSection client:load />
       <ServicesSection client:load />
       <ProjectsSection client:load />
-      <ReviewsSection client:load />
       <VideoSection client:load />
+      <ExperienceSection client:load />
+      <ServiceAreasSection client:load />
       <FAQSection client:load />
       <CTASection client:load />
       <Footer client:load />
+      <MobileStickyCall client:load />
     </div>
 </BaseLayout>
 

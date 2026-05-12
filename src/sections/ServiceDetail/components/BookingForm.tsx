@@ -75,7 +75,7 @@ export const BookingForm = () => {
               </label>
               <input
                 name="phone"
-                placeholder="+1234567890"
+                placeholder="07445 115491"
                 type="tel"
                 className="text-gray-900 text-base bg-amber-400 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-amber-400 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
               />

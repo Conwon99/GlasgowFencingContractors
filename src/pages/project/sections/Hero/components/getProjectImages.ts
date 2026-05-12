@@ -12,19 +12,19 @@ const projectHeroImages: Record<
 > = {
   "venetian-fencing-gate": {
     src: "/projects/project-1.webp",
-    alt: "Venetian Fencing & Gate installation in Irvine, Greater Glasgow",
+    alt: "Venetian Fencing & Gate installation in the Greater Glasgow area",
   },
   "concrete-posts-composite-panels-gate": {
     src: "/projects/project-2.webp",
-    alt: "Concrete posts and composite panels with gate installation in Irvine, Greater Glasgow",
+    alt: "Concrete posts and composite panels with gate installation in the Greater Glasgow area",
   },
   "timber-overlap-coping-double-gates": {
     src: "/projects/project-3.webp",
-    alt: "Timber overlap fencing with coping and double gates in Irvine, Greater Glasgow",
+    alt: "Timber overlap fencing with coping and double gates in the Greater Glasgow area",
   },
   "timber-wheelchair-access-steps": {
     src: "/projects/project-4.webp",
-    alt: "Timber wheelchair access and steps installation in Stevenston, Greater Glasgow",
+    alt: "Timber wheelchair access and steps installation in West Central Scotland",
   },
   "composite-decking-glass-handrails": {
     src: "/projects/project-5.webp",
@@ -32,7 +32,7 @@ const projectHeroImages: Record<
   },
   "timber-decking": {
     src: "/projects/project-6.webp",
-    alt: "Timber decking installation in Stevenston, Greater Glasgow",
+    alt: "Timber decking installation in West Central Scotland",
   },
   "composite-fencing-bespoke-gates": {
     src: "/projects/project-7.webp",
@@ -91,19 +91,19 @@ export const getProjectImages = (slug?: string): ProjectImage[] => {
     // Generate alt text
     let altText = "";
     if (slug.includes("venetian-fencing-gate")) {
-      altText = `Venetian fencing and gate project ${number} completed in Irvine, Greater Glasgow`;
+      altText = `Venetian fencing and gate project ${number} completed in the Greater Glasgow area`;
     } else if (slug.includes("concrete-posts-composite-panels-gate")) {
-      altText = `Concrete posts and composite panels with gate project ${number} completed in Irvine, Greater Glasgow`;
+      altText = `Concrete posts and composite panels with gate project ${number} completed in the Greater Glasgow area`;
     } else if (slug.includes("timber-overlap-coping-double-gates")) {
-      altText = `Timber overlap fencing with coping and double gates project ${number} completed in Irvine, Greater Glasgow`;
+      altText = `Timber overlap fencing with coping and double gates project ${number} completed in the Greater Glasgow area`;
     } else if (slug.includes("composite-fencing-bespoke-gates")) {
       altText = `Composite fencing with bespoke gates project ${number} completed in Greater Glasgow`;
     } else if (slug.includes("timber-wheelchair-access-steps")) {
-      altText = `Timber wheelchair access and steps project ${number} completed in Stevenston, Greater Glasgow`;
+      altText = `Timber wheelchair access and steps project ${number} completed in West Central Scotland`;
     } else if (slug.includes("composite-decking-glass-handrails")) {
       altText = `Composite decking with glass and handrails project ${number} completed in Kings Park, Glasgow`;
     } else if (slug.includes("timber-decking")) {
-      altText = `Timber decking project ${number} completed in Stevenston, Greater Glasgow`;
+      altText = `Timber decking project ${number} completed in West Central Scotland`;
     } else {
       altText = `Fencing and decking project ${number} completed in Greater Glasgow`;
     }

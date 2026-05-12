@@ -91,7 +91,7 @@ export const AboutSection = () => {
               <div>
                 <h3 className="text-white text-lg font-semibold mb-2">Address:</h3>
                 <p className="text-gray-200 text-base md:text-lg">
-                  Serving Greater Glasgow & Glasgow, Scotland
+                  Serving Greater Glasgow, Scotland
                 </p>
               </div>
             </div>

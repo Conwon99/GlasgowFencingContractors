@@ -28,7 +28,7 @@ export const HomepageEstimateSection = () => {
           <div
             role="region"
             aria-label="Homepage estimate success"
-            className="text-white bg-[#787e59] box-border caret-transparent hidden text-center p-[15px] rounded-[20px] mt-4"
+            className="text-white bg-[#787e59] box-border caret-transparent text-center p-[15px] rounded-[20px] mt-4 hidden"
           >
             <div>Thank you! Your submission has been received!</div>
           </div>
@@ -37,4 +37,10 @@ export const HomepageEstimateSection = () => {
             aria-label="Homepage estimate failure"
             className="text-white bg-[#8a9168] box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
           >
-            <div>Oops! Something went wr
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

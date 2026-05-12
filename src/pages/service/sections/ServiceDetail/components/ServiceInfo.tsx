@@ -232,6 +232,22 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
           </li>
         </ol>
       </div>
+      <div className="box-border caret-transparent mt-8 md:mt-12 pt-8 border-t border-white/10">
+        <h2 className="text-white text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-4 md:text-[34px] md:leading-[40.8px] md:mb-6">
+          Greater Glasgow sites — what we plan for
+        </h2>
+        <p className="text-gray-200 box-border caret-transparent mb-5 leading-relaxed">
+          Scottish weather cycles — wet winters, drying summers — affect timber movement, post stability, and fixings. We specify materials and fixings for exposure, check drainage against panels and gravel boards, and agree access routes before we start so installations stay sound for years, not just months.
+        </p>
+        <h3 className="text-white text-lg font-bold mb-3 md:text-xl">Boundaries, neighbours, and access</h3>
+        <p className="text-gray-200 box-border caret-transparent mb-5 leading-relaxed">
+          Many Greater Glasgow gardens share boundaries or tight alley access. We photograph the line, confirm responsibilities where it matters for your job, and sequence deliveries so disruption stays minimal. If something affects pricing — rock in post holes, stepped ground, or retained soil — we explain it before work begins, not after.
+        </p>
+        <h3 className="text-white text-lg font-bold mb-3 md:text-xl">Aftercare and warranties</h3>
+        <p className="text-gray-200 box-border caret-transparent leading-relaxed">
+          You receive clear guidance on treating timber, cleaning composite, and when to call us back for adjustments after seasonal movement. Our aim is straightforward: workmanship you can rely on, backed by transparent communication from first visit to handover.
+        </p>
+      </div>
     </div>
   );
 };

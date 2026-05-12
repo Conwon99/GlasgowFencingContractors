@@ -2,24 +2,34 @@ import { FAQItem } from "@/sections/FAQSection/components/FAQItem";
 
 const faqData = [
   {
-    question: "What types of fencing and decking services do you offer in Greater Glasgow?",
+    question: "How much does fencing or decking cost in Greater Glasgow?",
     answer:
-      "We offer a comprehensive range of fencing and decking services across Greater Glasgow, including bespoke fencing installation, sheds & gates, trellis work, composite and timber decking, palisade fencing, and professional fencing repairs. All our services are tailored to meet your specific needs, whether for domestic or commercial properties. With over 13 years of experience, we provide quality workmanship for all types of fencing and decking projects.",
+      "It depends on materials, length, ground conditions, and access — we don’t guess over the phone. After a quick site visit we give a written quote with labour and materials broken down so you can compare fairly. Typical jobs range from small repairs to full boundary renewals; we’ll flag anything that could add cost before we start.",
   },
   {
-    question: "Are you fully qualified and insured for fencing and decking work?",
+    question: "Do you charge a fee just to come out and quote?",
     answer:
-      "Yes, Glasgow Fencing Contractors is fully qualified and insured. Our experienced fitters are trained professionals who take pride in operating safely and to the highest industry standards. We carry full public liability insurance, so you can trust us to handle your fencing and decking needs with complete peace of mind. All our work is completed to the highest standards of workmanship and reliability.",
+      "No — estimates are free and without obligation. We’ll arrange a time that suits you, assess the job properly, and explain options before you commit.",
   },
   {
-    question: "Do you offer free quotes for fencing and decking projects?",
+    question: "How soon can you start or visit?",
     answer:
-      "Yes, we provide free, no-obligation quotes for all our fencing and decking services across Greater Glasgow. Contact us today to discuss your requirements, and we'll provide you with a competitive, detailed quote tailored to your specific project. Our team will assess your needs and provide transparent pricing with no hidden costs.",
+      "We aim to respond quickly—often within one business hour during working hours—and book site visits as soon as diaries allow. Seasonal demand varies; we’ll always give you a realistic window when you call.",
   },
   {
-    question: "Which areas do you serve for fencing and decking?",
+    question: "Are you insured and is your work guaranteed?",
     answer:
-      "We focus on Glasgow's northern and eastern suburbs (including Robroyston, Bishopbriggs, Lenzie, Kirkintilloch, Stepps, and nearby areas) and work regularly across Lanarkshire towns such as Hamilton, Motherwell, Coatbridge, Airdrie, and Cumbernauld. Contact us with your postcode — if you're nearby, we'll let you know straight away.",
+      "Yes — we carry public liability insurance and stand behind our workmanship. If something isn’t right, we’ll put it right. Details are confirmed in your quote so you know exactly what’s covered.",
+  },
+  {
+    question: "Which areas do you cover?",
+    answer:
+      "We focus on Glasgow’s northern and eastern suburbs (including Robroyston, Bishopbriggs, Lenzie, Kirkintilloch, Stepps, and nearby) and regularly work across Lanarkshire towns such as Hamilton, Motherwell, Coatbridge, Airdrie, and Cumbernauld. Send your postcode — if you’re in range, we’ll confirm straight away. On this page, open the “service areas” section for the full list.",
+  },
+  {
+    question: "What happens after I request a quote?",
+    answer:
+      "We’ll confirm your details, arrange a visit if needed, then send a clear written quote. If you’re happy with the scope and price, we schedule the work and keep you updated from start to finish.",
   },
 ];
 

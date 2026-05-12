@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     author: "David Warnes",
-    text: "Fantastic job, professional though and though. This is my second job done by Greater Glasgow fencing group!",
+    text: "Fantastic job, professional though and though. This is my second job done by Glasgow Fencing Contractors!",
   },
 ];
 

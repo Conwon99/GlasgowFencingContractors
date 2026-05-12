@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { buildServicePageJsonLd } from "@/utils/schema";
 import { Header } from "@/sections/Header";
 import { Hero } from "@/pages/service/sections/Hero";
 import { ServiceDetail } from "@/pages/service/sections/ServiceDetail";
@@ -147,13 +148,19 @@ const getDescription = (slug: string | undefined) => {
 const pageTitle = getTitle(slug);
 const pageDescription = getDescription(slug);
 const canonicalUrl = `https://www.glasgowfencingcontractors.co.uk/service/${slug}`;
+const servicePageName = pageTitle.split("|")[0].trim();
+const serviceSchema = buildServicePageJsonLd({
+  name: servicePageName,
+  description: pageDescription,
+  url: canonicalUrl,
+});
 
 // Determine if we should show projects section and which category
 const showProjects = slug === "fencing" || slug === "fence-repairs" || slug === "decking";
 const projectCategory: "fencing" | "decking" = slug === "decking" ? "decking" : "fencing";
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl}>
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl} extraJsonLd={[serviceSchema]}>
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:load />
       <Hero slug={slug} client:only="react" />

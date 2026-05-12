@@ -8,9 +8,13 @@ interface Props {
   canonical?: string;
   keywords?: string;
   ogImage?: string;
+  /** Additional JSON-LD nodes (e.g. Service, ContactPage) */
+  extraJsonLd?: Record<string, unknown>[];
+  /** When true, emit robots noindex (404, thank-you pages, etc.) */
+  noindex?: boolean;
 }
 
-const { title, description, canonical, keywords, ogImage } = Astro.props;
+const { title, description, canonical, keywords, ogImage, extraJsonLd, noindex } = Astro.props;
 
 const SITE_EMAIL = "hello@glasgowfencingcontractors.co.uk";
 
@@ -24,6 +28,9 @@ const defaultKeywords = "fence contractor glasgow, fencing glasgow, decking glas
 const siteUrl = "https://www.glasgowfencingcontractors.co.uk";
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
+const robotsMeta = noindex
+  ? "noindex, follow"
+  : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
 const areaServedNames = [
   "Robroyston", "Bishopbriggs", "Lenzie", "Stepps", "Moodiesburn", "Millerston", "Chryston", "Kirkintilloch", "Uddingston", "Bothwell",
@@ -44,7 +51,7 @@ const areaServed = areaServedNames.map((name) => ({ "@type": "City", name }));
     <meta name="language" content="English" />
     <meta name="geo.region" content="GB-SCT" />
     <meta name="geo.placename" content="Greater Glasgow, Scotland" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={robotsMeta} />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />
@@ -82,16 +89,17 @@ const areaServed = areaServedNames.map((name) => ({ "@type": "City", name }));
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
+      "@id": `${siteUrl}/#localbusiness`,
       "name": "Glasgow Fencing Contractors",
       "description": "Fully qualified and insured fencing and decking specialists serving Greater Glasgow. Fencing, fence repairs, decking, gates, sheds, and garden rooms. Over 13 years' experience.",
       "telephone": CANONICAL_PHONE_TEL,
       "email": SITE_EMAIL,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "",
+        "streetAddress": "Greater Glasgow service area (by appointment)",
         "addressLocality": "Glasgow",
         "addressRegion": "Scotland",
-        "postalCode": "",
+        "postalCode": "G1",
         "addressCountry": "GB"
       },
       "geo": {
@@ -487,6 +495,9 @@ const areaServed = areaServedNames.map((name) => ({ "@type": "City", name }));
         "value": "5-10"
       }
     })} />
+    {extraJsonLd?.map((node) => (
+      <script type="application/ld+json" set:html={JSON.stringify(node)} />
+    ))}
   </head>
   <body>
     <slot />

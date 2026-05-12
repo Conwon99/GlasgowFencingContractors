@@ -1,3 +1,8 @@
+/**
+ * Dynamic sitemap for Glasgow Fencing Contractors.
+ * Child service URLs retain legacy `-irvine` slugs for stable inbound links and redirects;
+ * on-page copy targets Greater Glasgow — plan URL migration separately if needed.
+ */
 import type { APIRoute } from 'astro';
 import { projects } from '@/data/projects';
 

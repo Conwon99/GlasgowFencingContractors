@@ -6,12 +6,17 @@ import { AboutSection } from "@/pages/about/sections/AboutSection";
 import { ValuesSection } from "@/pages/about/sections/ValuesSection";
 import { CTASection } from "@/sections/Footer/components/CTASection";
 import { Footer } from "@/sections/Footer";
+import { buildAboutPageJsonLd } from "@/utils/schema";
+
+const aboutUrl = "https://www.glasgowfencingcontractors.co.uk/about";
+const aboutSchema = buildAboutPageJsonLd(aboutUrl);
 ---
 
 <BaseLayout 
   title="About Us - Glasgow Fencing Contractors | Experienced Fencing Contractors in Greater Glasgow"
   description="Learn about Glasgow Fencing Contractors - experienced fencing contractors serving Greater Glasgow and Glasgow. Fully qualified and insured with 13+ years of experience in fencing, decking, gates, sheds, and garden rooms."
-  canonical="https://www.glasgowfencingcontractors.co.uk/about"
+  canonical={aboutUrl}
+  extraJsonLd={[aboutSchema]}
 >
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:load />

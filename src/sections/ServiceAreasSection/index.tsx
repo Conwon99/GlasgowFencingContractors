@@ -53,7 +53,10 @@ export const ServiceAreasSection = () => {
   };
 
   return (
-    <section className="box-border caret-transparent pt-0 pb-[50px] md:pt-0 md:pb-[70px] bg-transparent">
+    <section
+      id="service-areas"
+      className="box-border caret-transparent pt-0 pb-[50px] md:pt-0 md:pb-[70px] bg-transparent"
+    >
       <div className="box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px]">
         <div className="box-border caret-transparent text-center mb-2">
           <button

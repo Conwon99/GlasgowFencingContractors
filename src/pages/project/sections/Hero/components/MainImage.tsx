@@ -6,25 +6,25 @@ const projectHeroImages: Record<
 > = {
   "venetian-fencing-gate": {
     src: "/projects/project-1.webp",
-    alt: "Venetian Fencing & Gate installation in Irvine, Greater Glasgow",
+    alt: "Venetian Fencing & Gate installation in the Greater Glasgow area",
     projectNumber: "001",
     imagePrefix: "wooden-gate-fencing",
   },
   "concrete-posts-composite-panels-gate": {
     src: "/projects/project-2.webp",
-    alt: "Concrete posts and composite panels with gate installation in Irvine, Greater Glasgow",
+    alt: "Concrete posts and composite panels with gate installation in the Greater Glasgow area",
     projectNumber: "002",
     imagePrefix: "project-2",
   },
   "timber-overlap-coping-double-gates": {
     src: "/projects/project-3.webp",
-    alt: "Timber overlap fencing with coping and double gates in Irvine, Greater Glasgow",
+    alt: "Timber overlap fencing with coping and double gates in the Greater Glasgow area",
     projectNumber: "003",
     imagePrefix: "wooden-fencing",
   },
   "timber-wheelchair-access-steps": {
     src: "/projects/project-4.webp",
-    alt: "Timber wheelchair access and steps installation in Stevenston, Greater Glasgow",
+    alt: "Timber wheelchair access and steps installation in West Central Scotland",
     projectNumber: "004",
     imagePrefix: "project-004",
   },
@@ -36,7 +36,7 @@ const projectHeroImages: Record<
   },
   "timber-decking": {
     src: "/projects/project-6.webp",
-    alt: "Timber decking installation in Stevenston, Greater Glasgow",
+    alt: "Timber decking installation in West Central Scotland",
     projectNumber: "006",
     imagePrefix: "project-006",
   },

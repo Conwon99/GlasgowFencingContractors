@@ -23,6 +23,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
         <img
           src={props.imageUrl}
           alt={props.imageAlt || ""}
+          loading="lazy"
+          decoding="async"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
         />
         <div className="absolute bg-gray-800 box-border caret-transparent pr-2.5 pb-2.5 rounded-br-[20px] left-[0%] top-[0%] md:pr-[15px] md:pb-[15px]">
