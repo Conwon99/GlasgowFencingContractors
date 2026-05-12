@@ -5,10 +5,10 @@ export const ExperienceContent = () => {
     <div className="box-border caret-transparent gap-x-[30px] flex flex-col justify-between gap-y-[30px] md:gap-x-[50px] md:gap-y-[50px]">
       <div className="box-border caret-transparent">
         <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[38px] mb-2.5 sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px]">
-          Looking For A Fence Contractor In Ayrshire?
+          Looking For A Fence Contractor In Greater Glasgow?
         </h2>
         <p className="text-gray-200 text-sm sm:text-base box-border caret-transparent mt-2.5 mb-5 md:mt-5 md:mb-5 leading-relaxed">
-          Fully qualified and insured with 13+ years experience, we provide professional fencing & decking services across Ayrshire and Glasgow.
+          Fully qualified and insured with 13+ years experience, we provide professional fencing & decking services across Greater Glasgow and Glasgow.
         </p>
         <div className="box-border caret-transparent mb-5 md:mb-[50px]">
           <ul className="text-white text-sm sm:text-base md:text-lg box-border caret-transparent list-none pl-0 space-y-2 md:space-y-3">

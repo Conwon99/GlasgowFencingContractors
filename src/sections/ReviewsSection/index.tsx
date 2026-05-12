@@ -14,7 +14,7 @@ export const ReviewsSection = () => {
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px] lg:grid-cols-[1fr_1fr_1fr]">
           <ReviewCard
             author="Janey Traill"
-            text="I had Stewart from Ayrshire Fencing Group erect a new fence for me. He did an excellent job at a reasonable price. I would highly recommend him."
+            text="I had Stewart from Glasgow Fencing Contractors erect a new fence for me. He did an excellent job at a reasonable price. I would highly recommend him."
             isRecommendation={true}
           />
           <ReviewCard
@@ -24,7 +24,7 @@ export const ReviewsSection = () => {
           />
           <ReviewCard
             author="David Warnes"
-            text="Fantastic job, professional though and though. This is my second job done by Ayrshire fencing group!"
+            text="Fantastic job, professional though and though. This is my second job done by Greater Glasgow fencing group!"
             isRecommendation={true}
           />
         </div>

@@ -44,7 +44,7 @@ export const GoogleBusinessProfileSection = () => {
                 </h3>
               </div>
               <p className="text-gray-200 text-sm sm:text-base md:text-lg box-border caret-transparent mb-6">
-                Ayrshire Fencing Group - Professional fencing and decking services in Ayrshire and Glasgow. View our location, read customer reviews, and see our work.
+                Glasgow Fencing Contractors — professional fencing and decking across Greater Glasgow. View our profile, read customer reviews, and get in touch.
               </p>
               <div className="box-border caret-transparent flex flex-col gap-3">
                 <a
@@ -89,9 +89,9 @@ export const GoogleBusinessProfileSection = () => {
                 height="650px"
                 frameBorder="0"
                 style={{ border: 0 }}
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Ayrshire%20Fencing%20Group%2C%20Bonnyton%20Place%2C%20Girdle%20Toll%2C%20Irvine%2C%20UK&maptype=roadmap"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Glasgow%2C%20Scotland%2C%20UK&maptype=roadmap"
                 allowFullScreen
-                title="Ayrshire Fencing Group Location - Irvine, Scotland"
+                title="Glasgow Fencing Contractors service area — Greater Glasgow"
                 className="box-border caret-transparent w-full h-full"
               ></iframe>
             </div>

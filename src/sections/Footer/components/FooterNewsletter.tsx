@@ -7,12 +7,12 @@ export const FooterNewsletter = () => {
       >
         <img
           src="/logo.webp"
-          alt="Ayrshire Fencing Group Logo"
+          alt="Glasgow Fencing Contractors Logo"
           className="box-border caret-transparent inline-block h-8 max-w-full w-full md:h-9"
         />
       </a>
       <p className="text-white box-border caret-transparent mb-2.5">
-        Fully qualified and insured fencing contractors. Bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs across Ayrshire. Over 13 years' experience.
+        Fully qualified and insured fencing contractors. Bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs across Greater Glasgow. Over 13 years' experience.
       </p>
 
       <div className="box-border caret-transparent mt-[30px] mb-[15px]">

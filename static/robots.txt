@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.ayrshirefencinggroup.com/sitemap.xml
+Sitemap: https://www.glasgowfencingcontractors.co.uk/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /api/

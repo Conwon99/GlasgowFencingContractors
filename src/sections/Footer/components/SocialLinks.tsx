@@ -15,7 +15,7 @@ export const SocialLinks = () => {
         />
       </a>
       <a
-        href="https://www.instagram.com/ayrshirefencinggroup/"
+        href="https://www.instagram.com/glasgowfencingcontractors/"
         target="_blank"
         rel="noopener noreferrer"
         className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
@@ -26,15 +26,6 @@ export const SocialLinks = () => {
           alt="Instagram"
           className="box-border caret-transparent h-5 max-w-full w-5"
         />
-      </a>
-      <a
-        href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white/80 text-sm box-border caret-transparent hover:text-white hover:decoration-transparent"
-        aria-label="TrustATrader"
-      >
-        TrustATrader
       </a>
     </div>
   );

@@ -4,18 +4,18 @@ export const HeroText = () => {
   return (
     <div className="box-border caret-transparent basis-[0%] grow max-w-[1100px]">
       <div className="box-border caret-transparent gap-x-4 flex flex-col gap-y-2 sm:gap-y-3">
-        <h1 className="text-white text-xs font-bold box-border caret-transparent blur-0 leading-[20px] sm:text-sm sm:leading-[22px] md:text-base md:leading-[24px] drop-shadow-lg">
-          [Fence Contractor in Ayrshire]
-        </h1>
-        <div className="text-white text-[32px] font-semibold box-border caret-transparent blur-0 tracking-[-1.2px] leading-[40px] sm:text-[40px] sm:leading-[48px] md:text-6xl md:leading-[68px]">
+        <p className="text-white text-xs font-bold uppercase tracking-wide box-border caret-transparent blur-0 leading-[20px] sm:text-sm sm:leading-[22px] md:text-base md:leading-[24px] drop-shadow-lg">
+          Fence contractor · Greater Glasgow
+        </p>
+        <h1 className="text-white text-[32px] font-semibold box-border caret-transparent blur-0 tracking-[-1.2px] leading-[40px] sm:text-[40px] sm:leading-[48px] md:text-6xl md:leading-[68px]">
           Fencing & Decking{" "}
           <span className="text-[#8a9168] text-[32px] italic font-bold box-border caret-transparent leading-[40px] sm:text-[40px] sm:leading-[48px] md:text-6xl md:leading-[68px] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-            Ayrshire
+            Greater Glasgow
           </span>
-        </div>
-        <div className="text-white text-xs box-border caret-transparent blur-0 leading-[20px] sm:text-sm sm:leading-[22px] md:text-base md:leading-[24px]">
-          Offering professional fence installation, fence repairs, decking, gates, sheds, and garden rooms in Ayrshire and Glasgow.
-        </div>
+        </h1>
+        <p className="text-white text-xs box-border caret-transparent blur-0 leading-[20px] sm:text-sm sm:leading-[22px] md:text-base md:leading-[24px]">
+          Offering professional fence installation, fence repairs, decking, gates, sheds, and garden rooms in Greater Glasgow and Glasgow.
+        </p>
       </div>
     </div>
   );

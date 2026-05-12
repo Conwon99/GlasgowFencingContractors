@@ -43,21 +43,21 @@ export const ThumbnailGrid = ({ slug, onImageClick }: ThumbnailGridProps) => {
       // Generate descriptive alt text based on project type
       let altText = "";
       if (slug?.includes("venetian-fencing-gate")) {
-        altText = `Venetian fencing and gate project ${number} completed in Irvine, Ayrshire`;
+        altText = `Venetian fencing and gate project ${number} completed in Irvine, Greater Glasgow`;
       } else if (slug?.includes("concrete-posts-composite-panels-gate")) {
-        altText = `Concrete posts and composite panels with gate project ${number} completed in Irvine, Ayrshire`;
+        altText = `Concrete posts and composite panels with gate project ${number} completed in Irvine, Greater Glasgow`;
       } else if (slug?.includes("timber-overlap-coping-double-gates")) {
-        altText = `Timber overlap fencing with coping and double gates project ${number} completed in Irvine, Ayrshire`;
+        altText = `Timber overlap fencing with coping and double gates project ${number} completed in Irvine, Greater Glasgow`;
       } else if (slug?.includes("composite-fencing-bespoke-gates")) {
-        altText = `Composite fencing with bespoke gates project ${number} completed in Ayrshire`;
+        altText = `Composite fencing with bespoke gates project ${number} completed in Greater Glasgow`;
       } else if (slug?.includes("timber-wheelchair-access-steps")) {
-        altText = `Timber wheelchair access and steps project ${number} completed in Stevenston, Ayrshire`;
+        altText = `Timber wheelchair access and steps project ${number} completed in Stevenston, Greater Glasgow`;
       } else if (slug?.includes("composite-decking-glass-handrails")) {
         altText = `Composite decking with glass and handrails project ${number} completed in Kings Park, Glasgow`;
       } else if (slug?.includes("timber-decking")) {
-        altText = `Timber decking project ${number} completed in Stevenston, Ayrshire`;
+        altText = `Timber decking project ${number} completed in Stevenston, Greater Glasgow`;
       } else {
-        altText = `Fencing and decking project ${number} completed in Ayrshire`;
+        altText = `Fencing and decking project ${number} completed in Greater Glasgow`;
       }
       
       return {

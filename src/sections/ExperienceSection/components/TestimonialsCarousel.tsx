@@ -3,7 +3,7 @@ import { useState } from "react";
 const testimonials = [
   {
     author: "Janey Traill",
-    text: "I had Stewart from Ayrshire Fencing Group erect a new fence for me. He did an excellent job at a reasonable price. I would highly recommend him.",
+    text: "I had Stewart from Glasgow Fencing Contractors erect a new fence for me. He did an excellent job at a reasonable price. I would highly recommend him.",
   },
   {
     author: "SC Kelly",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     author: "David Warnes",
-    text: "Fantastic job, professional though and though. This is my second job done by Ayrshire fencing group!",
+    text: "Fantastic job, professional though and though. This is my second job done by Greater Glasgow fencing group!",
   },
 ];
 

@@ -6,25 +6,25 @@ const projectHeroImages: Record<
 > = {
   "venetian-fencing-gate": {
     src: "/projects/project-1.webp",
-    alt: "Venetian Fencing & Gate installation in Irvine, Ayrshire",
+    alt: "Venetian Fencing & Gate installation in Irvine, Greater Glasgow",
     projectNumber: "001",
     imagePrefix: "wooden-gate-fencing",
   },
   "concrete-posts-composite-panels-gate": {
     src: "/projects/project-2.webp",
-    alt: "Concrete posts and composite panels with gate installation in Irvine, Ayrshire",
+    alt: "Concrete posts and composite panels with gate installation in Irvine, Greater Glasgow",
     projectNumber: "002",
     imagePrefix: "project-2",
   },
   "timber-overlap-coping-double-gates": {
     src: "/projects/project-3.webp",
-    alt: "Timber overlap fencing with coping and double gates in Irvine, Ayrshire",
+    alt: "Timber overlap fencing with coping and double gates in Irvine, Greater Glasgow",
     projectNumber: "003",
     imagePrefix: "wooden-fencing",
   },
   "timber-wheelchair-access-steps": {
     src: "/projects/project-4.webp",
-    alt: "Timber wheelchair access and steps installation in Stevenston, Ayrshire",
+    alt: "Timber wheelchair access and steps installation in Stevenston, Greater Glasgow",
     projectNumber: "004",
     imagePrefix: "project-004",
   },
@@ -36,13 +36,13 @@ const projectHeroImages: Record<
   },
   "timber-decking": {
     src: "/projects/project-6.webp",
-    alt: "Timber decking installation in Stevenston, Ayrshire",
+    alt: "Timber decking installation in Stevenston, Greater Glasgow",
     projectNumber: "006",
     imagePrefix: "project-006",
   },
   "composite-fencing-bespoke-gates": {
     src: "/projects/project-7.webp",
-    alt: "47m of composite fencing with 2 bespoke gates featuring dark grey slats, black composite and aluminium posts, black trellis, trims and caps in Ayrshire",
+    alt: "47m of composite fencing with 2 bespoke gates featuring dark grey slats, black composite and aluminium posts, black trellis, trims and caps in Greater Glasgow",
     projectNumber: "007",
     imagePrefix: "project-007",
   },

@@ -1,74 +1,51 @@
 import { useState } from "react";
 
+const tier1Cities = [
+  "Robroyston",
+  "Bishopbriggs",
+  "Lenzie",
+  "Stepps",
+  "Moodiesburn",
+  "Millerston",
+  "Chryston",
+  "Kirkintilloch",
+  "Uddingston",
+  "Bothwell",
+];
+
+const tier2Cities = [
+  "Baillieston",
+  "Garrowhill",
+  "Mount Vernon",
+  "Carmyle",
+  "Cambuslang",
+  "Rutherglen",
+  "Burnside",
+  "Blantyre",
+  "Hamilton",
+  "Bellshill",
+  "Motherwell",
+  "Coatbridge",
+  "Airdrie",
+  "Cumbernauld",
+  "Gartcosh",
+];
+
 export const ServiceAreasSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedArea, setSelectedArea] = useState<string | null>(null);
 
   const serviceAreas = {
-    "Ayrshire": {
-      cities: [
-        "Irvine",
-        "Kilmarnock",
-        "Ayr",
-        "Troon",
-        "Prestwick",
-        "Kilwinning",
-        "Saltcoats",
-        "Ardrossan",
-        "Largs",
-        "Dalry",
-        "Beith",
-        "Stewarton",
-        "Dreghorn",
-        "Springside",
-        "Dundonald",
-        "Symington",
-        "Tarbolton",
-        "Mauchline",
-        "Cumnock",
-        "Newmilns",
-        "Darvel",
-        "Galston",
-        "Hurlford",
-        "Fenwick",
-        "Kilmurs",
-        "Crosshouse",
-        "Kilmaurs",
-        "Dalrymple",
-        "Maybole",
-        "Girvan"
-      ],
-      description: "Ayrshire is a historic county in southwest Scotland, known for its beautiful coastline, rolling countryside, and vibrant towns. We provide comprehensive fencing and decking services throughout Ayrshire, from the coastal towns of Troon and Prestwick to the inland communities of Kilmarnock and Ayr. Our local knowledge and expertise ensure we understand the unique requirements of properties across this diverse region."
+    "Tier 1 — Target": {
+      cities: tier1Cities,
+      description:
+        "These neighbourhoods are our primary focus for fencing and decking — close-knit communities north and east of Glasgow where we aim to be your first-choice contractor for boundaries, gates, and outdoor upgrades.",
     },
-    "Glasgow": {
-      cities: [
-        "Glasgow City Centre",
-        "East End",
-        "West End",
-        "Southside",
-        "North Glasgow",
-        "Govan",
-        "Partick",
-        "Maryhill",
-        "Pollokshields",
-        "Shawlands",
-        "Bearsden",
-        "Milngavie",
-        "Bishopbriggs",
-        "Kirkintilloch",
-        "Lenzie",
-        "Newton Mearns",
-        "Giffnock",
-        "Clarkston",
-        "Barrhead",
-        "Paisley",
-        "Renfrew",
-        "Clydebank",
-        "Dumbarton",
-        "Helensburgh"
-      ],
-      description: "Glasgow, Scotland's largest city, offers a diverse range of properties from Victorian tenements to modern developments. We extend our professional fencing and decking services to Glasgow and surrounding areas, bringing our expertise in quality installation and craftsmanship to urban and suburban properties. Whether you're in the city centre or the surrounding suburbs, we're here to help enhance your property with durable, attractive fencing and decking solutions."
-    }
+    "Tier 2 — Strong residential towns / suburbs": {
+      cities: tier2Cities,
+      description:
+        "We regularly take on residential work across these well-established towns and suburbs — ideal when you want reliable workmanship, clear communication, and materials suited to typical Glasgow-area gardens.",
+    },
   };
 
   const handleAreaClick = (area: string) => {
@@ -78,8 +55,6 @@ export const ServiceAreasSection = () => {
   return (
     <section className="box-border caret-transparent pt-0 pb-[50px] md:pt-0 md:pb-[70px] bg-transparent">
       <div className="box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px]">
-        
-        {/* Accordion Button - Always Visible */}
         <div className="box-border caret-transparent text-center mb-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -96,55 +71,42 @@ export const ServiceAreasSection = () => {
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
         </div>
 
-        {/* Accordion Content - All content in HTML source for SEO */}
         <div
           id="service-areas-accordion"
           className={`box-border caret-transparent transition-all duration-300 ${
-            isOpen 
-              ? "max-h-[99999px] opacity-100 overflow-visible" 
-              : "max-h-0 opacity-0 overflow-hidden"
+            isOpen ? "max-h-[99999px] opacity-100 overflow-visible" : "max-h-0 opacity-0 overflow-hidden"
           }`}
           style={{
-            // Content always in DOM for SEO - only visually hidden when closed
             display: "block",
           }}
         >
           <div className="box-border caret-transparent">
-            {/* Title moved inside dropdown */}
             <div className="box-border caret-transparent text-center mb-6">
               <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[38px] sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px] mb-6">
                 Our Service Areas
               </h2>
             </div>
-            
+
             <div className="box-border caret-transparent text-center mb-[30px] md:mb-[50px]">
               <p className="text-gray-200 text-base sm:text-lg md:text-xl box-border caret-transparent mt-4 max-w-3xl mx-auto">
-                Ayrshire Fencing Group provides professional fencing and decking services across Ayrshire and Glasgow. Our experienced team serves residential and commercial properties throughout these regions, bringing quality craftsmanship and expert installation to your local area.
+                Glasgow Fencing Contractors provides professional fencing and decking across Greater Glasgow — from core northern and eastern suburbs through to Lanarkshire towns where we deliver consistent quality on domestic jobs.
               </p>
             </div>
 
             <div className="box-border caret-transparent mb-8 md:mb-12">
               <p className="text-gray-200 text-base sm:text-lg md:text-xl box-border caret-transparent leading-7 max-w-4xl mx-auto text-center">
-                We understand the importance of local knowledge when it comes to fencing and decking projects. Different areas have varying weather conditions, soil types, and local planning requirements. Our team's familiarity with Ayrshire and Glasgow means we can provide advice tailored to your specific location, ensuring your fencing and decking solutions are not only beautiful but also built to withstand local conditions. Whether you're in a coastal area like Troon or Prestwick, or in the heart of Glasgow, we bring the same commitment to quality and customer service to every project.
+                Scottish weather, clay-heavy gardens, and tight boundaries are all familiar territory for our team. Whether you need privacy screening in Bishopbriggs, a durable side gate in Kirkintilloch, or low-maintenance decking in Cambuslang, we plan installs that suit your plot — not a generic template from elsewhere.
               </p>
             </div>
 
             <div className="box-border caret-transparent grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {Object.entries(serviceAreas).map(([areaName, areaData]) => (
-                <div
-                  key={areaName}
-                  className="box-border caret-transparent bg-gray-800 rounded-lg overflow-hidden"
-                >
+                <div key={areaName} className="box-border caret-transparent bg-gray-800 rounded-lg overflow-hidden">
                   <button
                     onClick={() => handleAreaClick(areaName)}
                     className="box-border caret-transparent w-full text-left p-6 md:p-8 hover:bg-gray-700/50 transition-colors flex items-center justify-between border-b border-gray-700/50"
@@ -160,12 +122,7 @@ export const ServiceAreasSection = () => {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
 
@@ -176,7 +133,7 @@ export const ServiceAreasSection = () => {
                       </p>
                       <div className="box-border caret-transparent">
                         <h4 className="text-white text-base font-semibold box-border caret-transparent mb-4 md:text-lg">
-                          Areas We Serve in {areaName}:
+                          Areas covered:
                         </h4>
                         <div className="box-border caret-transparent grid grid-cols-2 sm:grid-cols-3 gap-3">
                           {areaData.cities.map((city) => (
@@ -207,9 +164,7 @@ export const ServiceAreasSection = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
 };
-

@@ -26,38 +26,38 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
   const isWoodenDecking = slug === "wooden-decking-irvine";
 
   const getTitle = () => {
-    if (isCompositeDecking) return "Need Expert Composite Decking In Ayrshire?";
-    if (isWoodenDecking) return "Need Expert Wooden Decking In Ayrshire?";
-    if (isNyloforFence) return "Need Expert Nylofor Fencing In Ayrshire?";
-    if (isConcreteFence) return "Need Expert Concrete Fencing In Ayrshire?";
-    if (isCustomFence) return "Need Expert Custom Fence Construction In Ayrshire?";
-    if (isWoodFence) return "Need Expert Wood Fence Installation In Ayrshire?";
-    if (isFenceReplacement) return "Need Expert Fence Replacement In Ayrshire?";
-    if (isGardenFence) return "Need Expert Garden Fence Installation In Ayrshire?";
-    if (isCompositeFence) return "Need Expert Composite Fencing Installation In Ayrshire?";
-    if (isChainlinkFence) return "Need Expert Chainlink Fencing Installation In Ayrshire?";
-    if (isTimberDecking) return "Need Expert Timber Decking In Ayrshire?";
-    if (isDecking) return "Need Expert Decking In Ayrshire?";
-    if (isFencing) return "Need Expert Fencing In Ayrshire?";
-    if (isFenceRepairs) return "Need Expert Fence Repairs In Ayrshire?";
-    if (isGates) return "Need Expert Gates In Ayrshire?";
-    if (isSheds) return "Need Expert Sheds In Ayrshire?";
-    if (isGardenRooms) return "Need Expert Garden Rooms In Ayrshire?";
-    return "Need Expert Services In Ayrshire?";
+    if (isCompositeDecking) return "Need Expert Composite Decking In Greater Glasgow?";
+    if (isWoodenDecking) return "Need Expert Wooden Decking In Greater Glasgow?";
+    if (isNyloforFence) return "Need Expert Nylofor Fencing In Greater Glasgow?";
+    if (isConcreteFence) return "Need Expert Concrete Fencing In Greater Glasgow?";
+    if (isCustomFence) return "Need Expert Custom Fence Construction In Greater Glasgow?";
+    if (isWoodFence) return "Need Expert Wood Fence Installation In Greater Glasgow?";
+    if (isFenceReplacement) return "Need Expert Fence Replacement In Greater Glasgow?";
+    if (isGardenFence) return "Need Expert Garden Fence Installation In Greater Glasgow?";
+    if (isCompositeFence) return "Need Expert Composite Fencing Installation In Greater Glasgow?";
+    if (isChainlinkFence) return "Need Expert Chainlink Fencing Installation In Greater Glasgow?";
+    if (isTimberDecking) return "Need Expert Timber Decking In Greater Glasgow?";
+    if (isDecking) return "Need Expert Decking In Greater Glasgow?";
+    if (isFencing) return "Need Expert Fencing In Greater Glasgow?";
+    if (isFenceRepairs) return "Need Expert Fence Repairs In Greater Glasgow?";
+    if (isGates) return "Need Expert Gates In Greater Glasgow?";
+    if (isSheds) return "Need Expert Sheds In Greater Glasgow?";
+    if (isGardenRooms) return "Need Expert Garden Rooms In Greater Glasgow?";
+    return "Need Expert Services In Greater Glasgow?";
   };
 
   const getDescription = () => {
-    if (isCompositeDecking) return "Professional composite decking installation in Ayrshire. Our composite decking offers the beauty of wood with enhanced durability and minimal maintenance. Perfect for properties requiring a long-lasting, weather-resistant decking solution that maintains its appearance for years.";
-    if (isWoodenDecking) return "Professional wooden decking installation in Ayrshire using high-quality timber. Our wooden decking provides natural beauty and warmth, creating a traditional and versatile outdoor space. We use premium timber that can be customized to match your property's style and preferences.";
-    if (isNyloforFence) return "Nylofor fencing installation in Ayrshire providing modern, secure privacy solutions. Our nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance. This durable fencing material is perfect for properties requiring both security and aesthetic appeal.";
-    if (isConcreteFence) return "Concrete fencing installation in Ayrshire offering maximum durability and security. Our concrete fencing provides long-lasting protection with minimal maintenance, making it ideal for properties requiring robust, permanent boundary solutions. Perfect for both residential and commercial applications.";
-    if (isCustomFence) return "Our custom fence construction services in Ayrshire provide bespoke fencing solutions tailored to your specific needs. We work closely with you to design and build fences that match your property's style, whether you need privacy, security, or aesthetic appeal.";
-    if (isWoodFence) return "Professional wood fence installation in Ayrshire using high-quality timber. Our wooden fencing offers natural beauty and can be customized to match your property's style, providing both security and aesthetic appeal.";
-    if (isFenceReplacement) return "Expert fence replacement services in Ayrshire. When your existing fence is beyond repair, we provide complete replacement services, removing old fencing and installing new, durable solutions that will last for years.";
-    if (isGardenFence) return "Garden fence installation in Ayrshire designed to enhance your outdoor space. Our garden fencing solutions provide the perfect balance of privacy, security, and visual appeal for your garden and property boundaries.";
-    if (isCompositeFence) return "Composite fencing installation in Ayrshire offering low-maintenance and durable solutions. Our composite fencing combines the look of wood with enhanced weather resistance, perfect for properties requiring minimal upkeep.";
-    if (isChainlinkFence) return "Chainlink fencing installation in Ayrshire providing cost-effective and practical security solutions. Our chainlink fencing offers excellent visibility while maintaining strong boundaries and security for your property.";
-    if (isTimberDecking) return "Professional timber decking installation in Ayrshire. We use high-quality timber to create beautiful, durable decking that transforms your outdoor space into a functional and attractive area for relaxation and entertainment.";
+    if (isCompositeDecking) return "Professional composite decking installation in Greater Glasgow. Our composite decking offers the beauty of wood with enhanced durability and minimal maintenance. Perfect for properties requiring a long-lasting, weather-resistant decking solution that maintains its appearance for years.";
+    if (isWoodenDecking) return "Professional wooden decking installation in Greater Glasgow using high-quality timber. Our wooden decking provides natural beauty and warmth, creating a traditional and versatile outdoor space. We use premium timber that can be customized to match your property's style and preferences.";
+    if (isNyloforFence) return "Nylofor fencing installation in Greater Glasgow providing modern, secure privacy solutions. Our nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance. This durable fencing material is perfect for properties requiring both security and aesthetic appeal.";
+    if (isConcreteFence) return "Concrete fencing installation in Greater Glasgow offering maximum durability and security. Our concrete fencing provides long-lasting protection with minimal maintenance, making it ideal for properties requiring robust, permanent boundary solutions. Perfect for both residential and commercial applications.";
+    if (isCustomFence) return "Our custom fence construction services in Greater Glasgow provide bespoke fencing solutions tailored to your specific needs. We work closely with you to design and build fences that match your property's style, whether you need privacy, security, or aesthetic appeal.";
+    if (isWoodFence) return "Professional wood fence installation in Greater Glasgow using high-quality timber. Our wooden fencing offers natural beauty and can be customized to match your property's style, providing both security and aesthetic appeal.";
+    if (isFenceReplacement) return "Expert fence replacement services in Greater Glasgow. When your existing fence is beyond repair, we provide complete replacement services, removing old fencing and installing new, durable solutions that will last for years.";
+    if (isGardenFence) return "Garden fence installation in Greater Glasgow designed to enhance your outdoor space. Our garden fencing solutions provide the perfect balance of privacy, security, and visual appeal for your garden and property boundaries.";
+    if (isCompositeFence) return "Composite fencing installation in Greater Glasgow offering low-maintenance and durable solutions. Our composite fencing combines the look of wood with enhanced weather resistance, perfect for properties requiring minimal upkeep.";
+    if (isChainlinkFence) return "Chainlink fencing installation in Greater Glasgow providing cost-effective and practical security solutions. Our chainlink fencing offers excellent visibility while maintaining strong boundaries and security for your property.";
+    if (isTimberDecking) return "Professional timber decking installation in Greater Glasgow. We use high-quality timber to create beautiful, durable decking that transforms your outdoor space into a functional and attractive area for relaxation and entertainment.";
     if (isDecking) return "Our decking installation services are designed to transform your outdoor space with durable, high-quality timber decking. Whether you need decking for your garden, patio, or commercial property, we offer various materials and styles to suit your needs and enhance your outdoor living area.";
     if (isFencing) return "Our fencing installation services are designed to provide your property with durable, secure fencing that enhances both security and aesthetic appeal. We offer a wide range of fencing types to suit every need and budget.";
     if (isFenceRepairs) return "Expert repair services for all types of fencing. We fix damage, replace sections, and restore your fencing to its best condition, ensuring your property remains secure and well-maintained.";
@@ -91,12 +91,12 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
           {getDescription()}
         </p>
         <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-6">
-          {isDecking && "At Ayrshire Fencing Group, we understand that decking is more than just an outdoor surface - it's an extension of your living space. Our decking installations in Ayrshire and Glasgow are designed to create beautiful, functional areas where you can relax, entertain, and enjoy your garden year-round. We work with both timber and composite materials, each offering unique benefits for different applications and preferences."}
-          {isFencing && !isWoodFence && !isCompositeFence && !isChainlinkFence && !isNyloforFence && !isConcreteFence && "Our fencing solutions in Ayrshire are designed to provide security, privacy, and aesthetic appeal for your property. Whether you need boundary fencing, privacy screening, or decorative fencing, we offer a comprehensive range of materials and styles to suit every requirement. From traditional wooden fencing to modern composite and concrete options, we help you choose the perfect solution for your property."}
-          {isFenceRepairs && "When your fencing needs attention, our expert repair services in Ayrshire can restore it to perfect condition. We handle all types of fence repairs, from minor damage to complete section replacements. Our team quickly identifies issues and provides cost-effective solutions that extend the life of your fencing while maintaining its appearance and functionality."}
-          {isGates && "Gates are an essential element of property security and access control. Our gate installation services in Ayrshire cover everything from garden gates to secure access gates, all designed to complement your property's style while providing reliable security. We work with various materials and designs to create gates that are both functional and attractive."}
-          {isSheds && "Custom sheds provide valuable storage space and can enhance your property's functionality. Our shed building services in Ayrshire create practical, attractive storage solutions tailored to your specific needs. Whether you need a small garden shed or a larger storage building, we design and construct sheds that are built to last and complement your property."}
-          {isGardenRooms && "Garden rooms offer versatile additional living space that can be used for work, relaxation, or entertainment. Our garden room installations in Ayrshire and Glasgow create comfortable, well-insulated spaces that extend your home's functionality. These versatile structures can serve as home offices, studios, gyms, or simply peaceful retreats in your garden."}
+          {isDecking && "At Glasgow Fencing Contractors, we understand that decking is more than just an outdoor surface - it's an extension of your living space. Our decking installations in Greater Glasgow and Glasgow are designed to create beautiful, functional areas where you can relax, entertain, and enjoy your garden year-round. We work with both timber and composite materials, each offering unique benefits for different applications and preferences."}
+          {isFencing && !isWoodFence && !isCompositeFence && !isChainlinkFence && !isNyloforFence && !isConcreteFence && "Our fencing solutions in Greater Glasgow are designed to provide security, privacy, and aesthetic appeal for your property. Whether you need boundary fencing, privacy screening, or decorative fencing, we offer a comprehensive range of materials and styles to suit every requirement. From traditional wooden fencing to modern composite and concrete options, we help you choose the perfect solution for your property."}
+          {isFenceRepairs && "When your fencing needs attention, our expert repair services in Greater Glasgow can restore it to perfect condition. We handle all types of fence repairs, from minor damage to complete section replacements. Our team quickly identifies issues and provides cost-effective solutions that extend the life of your fencing while maintaining its appearance and functionality."}
+          {isGates && "Gates are an essential element of property security and access control. Our gate installation services in Greater Glasgow cover everything from garden gates to secure access gates, all designed to complement your property's style while providing reliable security. We work with various materials and designs to create gates that are both functional and attractive."}
+          {isSheds && "Custom sheds provide valuable storage space and can enhance your property's functionality. Our shed building services in Greater Glasgow create practical, attractive storage solutions tailored to your specific needs. Whether you need a small garden shed or a larger storage building, we design and construct sheds that are built to last and complement your property."}
+          {isGardenRooms && "Garden rooms offer versatile additional living space that can be used for work, relaxation, or entertainment. Our garden room installations in Greater Glasgow and Glasgow create comfortable, well-insulated spaces that extend your home's functionality. These versatile structures can serve as home offices, studios, gyms, or simply peaceful retreats in your garden."}
         </p>
         <div className="mb-5 md:mb-6">
           <PhoneLink

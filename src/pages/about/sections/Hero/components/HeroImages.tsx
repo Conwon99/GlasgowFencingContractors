@@ -4,21 +4,21 @@ export const HeroImages = () => {
       <div className="box-border caret-transparent h-full translate-y-[0.042px] overflow-hidden rounded-[20px] md:h-[260px] md:translate-y-[13.857px]">
         <img
           src="/projects/project-1.webp"
-          alt="Professional wooden gate and fencing installation completed by Ayrshire Fencing Group in Ayrshire"
+          alt="Professional wooden gate and fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
         />
       </div>
       <div className="box-border caret-transparent overflow-hidden rounded-[20px]">
         <img
           src="/projects/project-2.webp"
-          alt="Professional fencing installation project completed by Ayrshire Fencing Group in Ayrshire"
+          alt="Professional fencing installation project completed by Glasgow Fencing Contractors in Greater Glasgow"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
         />
       </div>
       <div className="box-border caret-transparent h-full translate-y-[-50px] overflow-hidden rounded-[20px] md:h-[270px] md:translate-y-[-21.555px]">
         <img
           src="/projects/project-3.webp"
-          alt="Professional wooden fencing installation completed by Ayrshire Fencing Group in Ayrshire"
+          alt="Professional wooden fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
         />
       </div>

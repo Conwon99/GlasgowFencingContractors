@@ -16,20 +16,20 @@ export const ServiceImage = ({ slug }: ServiceImageProps = {}) => {
   };
 
   const getImageAlt = () => {
-    if (slug === "composite-decking-irvine") return "Professional composite decking installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "wooden-decking-irvine") return "Professional wooden decking installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "wooden-fencing-irvine") return "Professional wooden fencing installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "composite-fencing-irvine") return "Professional composite fencing installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "chainlink-fencing-irvine") return "Professional chainlink fencing installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "nylofor-fencing-irvine") return "Professional nylofor fencing installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "concrete-fencing-irvine") return "Professional concrete fencing installation completed by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "decking" || slug === "timber-decking-irvine") return "Professional decking installation service provided by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "fencing" || slug === "custom-fence-construction-irvine" || slug === "wood-fence-installation-irvine" || slug === "garden-fence-installation-irvine" || slug === "composite-fencing-installation-irvine" || slug === "chainlink-fencing-installation-irvine") return "Professional fencing installation service provided by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "fence-repairs" || slug === "fence-replacement-irvine") return "Professional fence repair service provided by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "gates") return "Professional gate installation and fencing work by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "sheds") return "Professional custom shed installation by Ayrshire Fencing Group in Ayrshire";
-    if (slug === "garden-rooms") return "Professional garden room installation by Ayrshire Fencing Group in Ayrshire";
-    return "Professional service provided by Ayrshire Fencing Group in Ayrshire";
+    if (slug === "composite-decking-irvine") return "Professional composite decking installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "wooden-decking-irvine") return "Professional wooden decking installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "wooden-fencing-irvine") return "Professional wooden fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "composite-fencing-irvine") return "Professional composite fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "chainlink-fencing-irvine") return "Professional chainlink fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "nylofor-fencing-irvine") return "Professional nylofor fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "concrete-fencing-irvine") return "Professional concrete fencing installation completed by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "decking" || slug === "timber-decking-irvine") return "Professional decking installation service provided by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "fencing" || slug === "custom-fence-construction-irvine" || slug === "wood-fence-installation-irvine" || slug === "garden-fence-installation-irvine" || slug === "composite-fencing-installation-irvine" || slug === "chainlink-fencing-installation-irvine") return "Professional fencing installation service provided by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "fence-repairs" || slug === "fence-replacement-irvine") return "Professional fence repair service provided by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "gates") return "Professional gate installation and fencing work by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "sheds") return "Professional custom shed installation by Glasgow Fencing Contractors in Greater Glasgow";
+    if (slug === "garden-rooms") return "Professional garden room installation by Glasgow Fencing Contractors in Greater Glasgow";
+    return "Professional service provided by Glasgow Fencing Contractors in Greater Glasgow";
   };
 
   return (

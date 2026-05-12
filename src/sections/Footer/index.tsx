@@ -9,10 +9,10 @@ export const Footer = () => {
         <div className="box-border caret-transparent gap-x-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 md:gap-x-8 md:gap-y-8">
           <div className="box-border caret-transparent flex flex-col gap-y-4">
             <div className="text-white text-lg font-semibold box-border caret-transparent mb-2">
-              Ayrshire Fencing Group
+              Glasgow Fencing Contractors
             </div>
             <p className="text-white/80 text-sm box-border caret-transparent max-w-xs leading-relaxed">
-              Fully qualified and insured fencing contractors. Bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs across Ayrshire.
+              Fully qualified and insured fencing contractors. Bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs across Greater Glasgow.
             </p>
             <div className="box-border caret-transparent flex flex-col gap-3 mt-2">
               <div className="text-white text-sm font-semibold box-border caret-transparent">
@@ -33,7 +33,7 @@ export const Footer = () => {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/ayrshirefencinggroup/"
+                  href="https://www.instagram.com/glasgowfencingcontractors/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent transition-colors duration-300"
@@ -44,15 +44,6 @@ export const Footer = () => {
                     alt="Instagram"
                     className="box-border caret-transparent h-5 max-w-full w-5"
                   />
-                </a>
-                <a
-                  href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent flex items-center gap-2 transition-colors duration-300"
-                  aria-label="TrustATrader"
-                >
-                  TrustATrader
                 </a>
               </div>
             </div>
@@ -86,8 +77,8 @@ export const Footer = () => {
               showIcon={false}
               className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300"
             />
-            <a href="mailto:ayrshirefencinggroup@gmail.com" className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300">
-              ayrshirefencinggroup@gmail.com
+            <a href="mailto:hello@glasgowfencingcontractors.co.uk" className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300">
+              hello@glasgowfencingcontractors.co.uk
             </a>
 
           </div>
@@ -127,13 +118,13 @@ export const Footer = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ayrshire Fencing Group - Google Business Profile"
+                title="Glasgow Fencing Contractors - Google Business Profile"
                 className="box-border caret-transparent w-full h-full"
               ></iframe>
             </div>
             <div className="box-border caret-transparent flex flex-col gap-2 mt-2">
               <a
-                href="https://www.google.com/maps/place/Ayrshire+Fencing+Group"
+                href="https://www.google.com/maps/search/?api=1&query=Glasgow%2C%20Scotland%2C%20UK"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 text-xs box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent underline transition-colors duration-300"
@@ -141,7 +132,7 @@ export const Footer = () => {
                 View on Google Maps
               </a>
               <a
-                href="https://www.google.com/maps/place/Ayrshire+Fencing+Group/@55.619,-4.655,15z/data=!4m6!3m5!1s0x0:0x0!8m2!3d55.619!4d-4.655!16s%2Fg%2F11c0x0x0"
+                href="https://share.google/I5rodIQo9AWkx7xTp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 text-xs box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent underline transition-colors duration-300"
@@ -150,7 +141,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="text-white/80 text-sm box-border caret-transparent mt-1">
-              Serving Irvine & Ayrshire, Scotland
+              Serving Greater Glasgow, Scotland
             </p>
           </div>
         </div>
@@ -163,7 +154,7 @@ export const Footer = () => {
         
         <div className="box-border caret-transparent border-t border-white/20 mt-10 pt-6 text-center">
           <p className="text-white/60 text-sm box-border caret-transparent">
-            © {new Date().getFullYear()} Ayrshire Fencing Group. All rights reserved.
+            © {new Date().getFullYear()} Glasgow Fencing Contractors. All rights reserved.
           </p>
         </div>
       </div>

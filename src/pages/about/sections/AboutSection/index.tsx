@@ -9,20 +9,20 @@ export const AboutSection = () => {
           {/* Left Column - Text Content */}
           <div>
             <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[36px] mb-6 md:text-4xl md:leading-[48px]">
-              Our Story - Ayrshire Fencing Group
+              Our Story - Glasgow Fencing Contractors
             </h2>
             <div className="text-gray-200 text-base sm:text-lg md:text-xl box-border caret-transparent leading-7 space-y-5">
               <p>
-                At Ayrshire Fencing Group, we understand the needs of our customers and we know that commercial and domestic customers want great quality and value. We are one of the best respected local fencing companies in Ayrshire and pride ourselves on the skills and quality that we bring to every job.
+                At Glasgow Fencing Contractors, we understand the needs of our customers and we know that commercial and domestic customers want great quality and value. We are one of the best respected local fencing companies in Greater Glasgow and pride ourselves on the skills and quality that we bring to every job.
               </p>
               <p>
                 All of our customers are different; for some, fencing is a matter of security, while for others, aesthetics is the main priority. We take the time to understand each client's priorities and needs, including function, look and budget to help them get the best possible value for money.
               </p>
               <p>
-                Our professional team of fencing contractors are fully qualified and insured. We are proud of our fence fitters and of the service that they provide to every customer. Ayrshire Fencing Group's fitters are happy to quote for any job, no matter how big or small.
+                Our professional team of fencing contractors are fully qualified and insured. We are proud of our fence fitters and of the service that they provide to every customer. Glasgow Fencing Contractors's fitters are happy to quote for any job, no matter how big or small.
               </p>
               <p>
-                Fully qualified and insured with 13+ years experience, we provide professional fencing & decking services across Ayrshire and Glasgow. We specialize in providing bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs tailored to meet your needs throughout Ayrshire.
+                Fully qualified and insured with 13+ years experience, we provide professional fencing & decking services across Greater Glasgow and Glasgow. We specialize in providing bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs tailored to meet your needs throughout Greater Glasgow.
               </p>
             </div>
           </div>
@@ -32,21 +32,21 @@ export const AboutSection = () => {
             <div className="overflow-hidden rounded-[20px]">
               <img
                 src="/projects/project-4.webp"
-                alt="Ayrshire Fencing Group professional fencing installation"
+                alt="Glasgow Fencing Contractors professional fencing installation"
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="flex items-center justify-center p-6 md:p-8">
               <img
                 src="/logo.webp"
-                alt="Ayrshire Fencing Group Logo"
+                alt="Glasgow Fencing Contractors Logo"
                 className="max-w-[360px] md:max-w-[400px] h-auto object-contain"
               />
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <img
                 src="/projects/project-5.webp"
-                alt="Ayrshire Fencing Group decking and fencing project"
+                alt="Glasgow Fencing Contractors decking and fencing project"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -59,7 +59,7 @@ export const AboutSection = () => {
             Who We Are
           </h2>
           <p className="text-gray-200 text-base sm:text-lg md:text-xl box-border caret-transparent leading-7">
-            Ayrshire Fencing Group is a fully qualified and insured fencing and decking specialist serving Ayrshire and Glasgow. With over 13 years of experience, we deliver quality workmanship and value to both residential and commercial customers. We specialize in bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs, bringing expertise and professionalism to every project.
+            Glasgow Fencing Contractors is a fully qualified and insured fencing and decking specialist serving Greater Glasgow and Glasgow. With over 13 years of experience, we deliver quality workmanship and value to both residential and commercial customers. We specialize in bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs, bringing expertise and professionalism to every project.
           </p>
         </div>
 
@@ -73,10 +73,10 @@ export const AboutSection = () => {
               <div>
                 <h3 className="text-white text-lg font-semibold mb-2">Email Us:</h3>
                 <a
-                  href="mailto:ayrshirefencinggroup@gmail.com"
+                  href="mailto:hello@glasgowfencingcontractors.co.uk"
                   className="text-[#787e59] hover:text-[#9ba870] hover:underline text-base md:text-lg"
                 >
-                  ayrshirefencinggroup@gmail.com
+                  hello@glasgowfencingcontractors.co.uk
                 </a>
               </div>
               <div>
@@ -91,7 +91,7 @@ export const AboutSection = () => {
               <div>
                 <h3 className="text-white text-lg font-semibold mb-2">Address:</h3>
                 <p className="text-gray-200 text-base md:text-lg">
-                  Serving Ayrshire & Glasgow, Scotland
+                  Serving Greater Glasgow & Glasgow, Scotland
                 </p>
               </div>
             </div>
@@ -112,14 +112,6 @@ export const AboutSection = () => {
             <h3 className="text-white text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex flex-wrap gap-6">
               <a
-                href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#787e59] hover:text-[#9ba870] hover:underline text-base md:text-lg flex items-center gap-2"
-              >
-                TrustATrader
-              </a>
-              <a
                 href="https://www.facebook.com/profile.php?id=100089970103885"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -134,7 +126,7 @@ export const AboutSection = () => {
                 Facebook
               </a>
               <a
-                href="https://www.instagram.com/ayrshirefencinggroup/"
+                href="https://www.instagram.com/glasgowfencingcontractors/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#787e59] hover:text-[#9ba870] hover:underline text-base md:text-lg flex items-center gap-2"

@@ -4,12 +4,12 @@ export const WhyChooseContent = () => {
       <h2 className="text-gray-900 text-4xl font-bold box-border caret-transparent leading-[43.2px] mb-2.5 md:text-[56px] md:leading-[67.2px]">
         Why Choose{" "}
         <span className="text-orange-500 text-4xl box-border caret-transparent leading-[43.2px] md:text-[56px] md:leading-[67.2px]">
-          Ayrshire Fencing Group
+          Glasgow Fencing Contractors
         </span>
         ?
       </h2>
       <p className="box-border caret-transparent mb-2.5">
-        Our expert team combines over 13 years' experience with quality materials to ensure durable, long-lasting results for every project. We are one of the best respected local fencing companies in Ayrshire, serving customers with fully qualified and insured contractors.
+        Our expert team combines over 13 years' experience with quality materials to ensure durable, long-lasting results for every project. We are one of the best respected local fencing companies in Greater Glasgow, serving customers with fully qualified and insured contractors.
       </p>
       <ul
         role="list"

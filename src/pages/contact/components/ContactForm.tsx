@@ -1,44 +1,62 @@
 import { useEffect } from "react";
 import { trackFormStart } from "@/utils/analytics";
 
-export const ContactForm = () => {
+export interface ContactFormProps {
+  formName?: string;
+  ariaLabel?: string;
+  successAriaLabel?: string;
+  failureAriaLabel?: string;
+  analyticsFormId?: string;
+  /** Scope success/error regions and form lookup to this element (e.g. #homepage-estimate-root). */
+  rootSelector?: string;
+}
+
+export const ContactForm = ({
+  formName = "wf-form-Contact-Form",
+  ariaLabel = "Contact Form",
+  successAriaLabel = "Contact Form success",
+  failureAriaLabel = "Contact Form failure",
+  analyticsFormId = "contact",
+  rootSelector,
+}: ContactFormProps = {}) => {
   useEffect(() => {
-    const form = document.querySelector('form[name="wf-form-Contact-Form"]') as HTMLFormElement;
-    const successMessage = document.querySelector('[aria-label="Contact Form success"]') as HTMLElement;
-    const errorMessage = document.querySelector('[aria-label="Contact Form failure"]') as HTMLElement;
+    const root = (rootSelector && document.querySelector(rootSelector)) || document;
+    const form = Array.from(root.querySelectorAll("form")).find(
+      (f) => f.getAttribute("name") === formName,
+    ) as HTMLFormElement | undefined;
+    const successMessage = root.querySelector(`[aria-label="${successAriaLabel}"]`) as HTMLElement | null;
+    const errorMessage = root.querySelector(`[aria-label="${failureAriaLabel}"]`) as HTMLElement | null;
 
     if (form) {
-      // Track form start when user first interacts with any form field
       let formStarted = false;
       const handleFormStart = () => {
         if (!formStarted) {
           formStarted = true;
-          trackFormStart('contact');
+          trackFormStart(analyticsFormId);
         }
       };
 
-      const formFields = form.querySelectorAll('input, textarea, select');
+      const formFields = form.querySelectorAll("input, textarea, select");
       formFields.forEach((field) => {
-        field.addEventListener('focus', handleFormStart, { once: true });
-        field.addEventListener('click', handleFormStart, { once: true });
+        field.addEventListener("focus", handleFormStart, { once: true });
+        field.addEventListener("click", handleFormStart, { once: true });
       });
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        
+
         if (successMessage) successMessage.classList.add("hidden");
         if (errorMessage) errorMessage.classList.add("hidden");
 
-        // Check if form is valid
         if (!form.checkValidity()) {
           form.reportValidity();
           return;
         }
 
         const formData = new FormData(form);
-        formData.append("websiteUrl", "www.ayrshirefencinggroup.com");
+        formData.append("websiteUrl", "www.glasgowfencingcontractors.co.uk");
 
         try {
-          const response = await fetch("https://formspree.io/f/xqarbvgy", {
+          const response = await fetch("https://formspree.io/f/mnjwwlnw", {
             method: "POST",
             body: formData,
             headers: {
@@ -55,7 +73,7 @@ export const ContactForm = () => {
           } else {
             throw new Error("Form submission failed");
           }
-        } catch (error) {
+        } catch {
           if (errorMessage) {
             errorMessage.classList.remove("hidden");
             errorMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -63,13 +81,13 @@ export const ContactForm = () => {
         }
       });
     }
-  }, []);
+  }, [formName, successAriaLabel, failureAriaLabel, analyticsFormId, rootSelector]);
 
   return (
     <form
-      name="wf-form-Contact-Form"
-      aria-label="Contact Form"
-      action="https://formspree.io/f/xqarbvgy"
+      name={formName}
+      aria-label={ariaLabel}
+      action="https://formspree.io/f/mnjwwlnw"
       method="POST"
       className="box-border caret-transparent"
     >
@@ -104,7 +122,7 @@ export const ContactForm = () => {
           </label>
           <input
             name="phone"
-            placeholder="07926 592704"
+            placeholder="07445 115491"
             type="tel"
             required
             className="text-gray-900 text-base bg-white box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border-2 border-white mb-2.5 px-5 py-2.5 rounded-[20px] border-solid focus:outline-none focus:ring-2 focus:ring-white focus:border-white"

@@ -46,7 +46,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve?",
-        answer: "We serve Ayrshire, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation to see if we can help with your fencing project."
+        answer: "We serve Greater Glasgow, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation to see if we can help with your fencing project."
       }
     ];
   }
@@ -72,7 +72,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve for fence repairs?",
-        answer: "We provide fence repair services throughout Ayrshire, Glasgow, and surrounding areas. Contact us for a free assessment of your fence repair needs."
+        answer: "We provide fence repair services throughout Greater Glasgow, Glasgow, and surrounding areas. Contact us for a free assessment of your fence repair needs."
       }
     ];
   }
@@ -110,7 +110,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve for decking projects?",
-        answer: "We serve Ayrshire, Glasgow, and surrounding areas for all decking projects. Contact us for a free consultation to discuss your decking needs and get a detailed quote."
+        answer: "We serve Greater Glasgow, Glasgow, and surrounding areas for all decking projects. Contact us for a free consultation to discuss your decking needs and get a detailed quote."
       }
     ];
   }
@@ -136,7 +136,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve for gate installation?",
-        answer: "We provide gate installation services throughout Ayrshire, Glasgow, and surrounding areas. Contact us for a free consultation and quote for your gate project."
+        answer: "We provide gate installation services throughout Greater Glasgow, Glasgow, and surrounding areas. Contact us for a free consultation and quote for your gate project."
       }
     ];
   }
@@ -167,7 +167,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve for shed building?",
-        answer: "We provide shed building services throughout Ayrshire, Glasgow, and surrounding areas. Contact us for a free consultation to discuss your shed requirements."
+        answer: "We provide shed building services throughout Greater Glasgow, Glasgow, and surrounding areas. Contact us for a free consultation to discuss your shed requirements."
       }
     ];
   }
@@ -193,7 +193,7 @@ const getFAQs = (slug: string | undefined) => {
       },
       {
         question: "What areas do you serve for garden room installation?",
-        answer: "We provide garden room installation services throughout Ayrshire, Glasgow, and surrounding areas. Contact us for a free consultation to discuss your garden room project."
+        answer: "We provide garden room installation services throughout Greater Glasgow, Glasgow, and surrounding areas. Contact us for a free consultation to discuss your garden room project."
       }
     ];
   }
@@ -218,7 +218,7 @@ const getDefaultFAQs = () => {
     },
     {
       question: "What areas do you serve?",
-      answer: "We serve Ayrshire, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation."
+      answer: "We serve Greater Glasgow, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation."
     },
     {
       question: "Are there any hidden costs?",

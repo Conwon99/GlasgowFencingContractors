@@ -11,10 +11,10 @@ export const FooterContact = () => {
             className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
           />
           <a
-            href="mailto:ayrshirefencinggroup@gmail.com"
+            href="mailto:hello@glasgowfencingcontractors.co.uk"
             className="box-border caret-transparent block underline hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]"
           >
-            ayrshirefencinggroup@gmail.com
+            hello@glasgowfencingcontractors.co.uk
           </a>
         </div>
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
@@ -32,11 +32,11 @@ export const FooterContact = () => {
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67108bda6d31254d6c320ce3_location-01.svg"
-            alt="Location icon - Ayrshire Fencing Group service area"
+            alt="Location icon - Glasgow Fencing Contractors service area"
             className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
           />
           <div className="box-border caret-transparent">
-            Serving Ayrshire, Scotland
+            Serving Greater Glasgow, Scotland
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e333797fd0eb9fa085_instagram.svg"
-            alt="Instagram icon - Follow Ayrshire Fencing Group on Instagram"
+            alt="Instagram icon - Follow Glasgow Fencing Contractors on Instagram"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>
@@ -57,7 +57,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e375e253beb4db0e54_facebook.svg"
-            alt="Facebook icon - Follow Ayrshire Fencing Group on Facebook"
+            alt="Facebook icon - Follow Glasgow Fencing Contractors on Facebook"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>
@@ -67,7 +67,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e3c0bab665af9c269a_twitter-x.svg"
-            alt="Twitter icon - Follow Ayrshire Fencing Group on Twitter"
+            alt="Twitter icon - Follow Glasgow Fencing Contractors on Twitter"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>

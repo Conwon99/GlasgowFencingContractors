@@ -1,17 +1,15 @@
-// Phone number tracking configuration
-export const CANONICAL_PHONE = "07926 592704";
-export const CANONICAL_PHONE_TEL = "+447926592704";
-export const TRACKING_PHONE = "+44 7723 572152";
-export const TRACKING_PHONE_TEL = "+447723572152";
+// Phone number tracking configuration (canonical + click-tracking use same number)
+export const CANONICAL_PHONE = "07445 115491";
+export const CANONICAL_PHONE_TEL = "+447445115491";
+export const TRACKING_PHONE = "+44 7445 115491";
+export const TRACKING_PHONE_TEL = "+447445115491";
 
 // Format phone number for display (preserves +44 and formats nicely)
 export const formatTrackingPhone = (phone: string): string => {
-  // Keep +44 prefix and format as +44 7723 572152
   if (phone.startsWith("+44")) {
     const cleaned = phone.replace("+44", "").replace(/\s/g, "");
-    // Format as +44 7723 572152 (country code, space, 5 digits, space, 6 digits)
     if (cleaned.length === 10) {
-      return "+44 " + cleaned.slice(0, 5) + " " + cleaned.slice(5);
+      return "+44 " + cleaned.slice(0, 4) + " " + cleaned.slice(4);
     }
     return "+44 " + cleaned;
   }
@@ -21,4 +19,3 @@ export const formatTrackingPhone = (phone: string): string => {
 export const formatTrackingPhoneDisplay = (): string => {
   return formatTrackingPhone(TRACKING_PHONE);
 };
-

@@ -15,7 +15,7 @@ const faqData = [
   },
   {
     question: "What areas do you serve?",
-    answer: "We serve Ayrshire, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation to see if we can help with your project."
+    answer: "We serve Greater Glasgow, Glasgow, and the surrounding areas. Our team is fully qualified and insured, and we're happy to discuss projects throughout the region. Contact us for a free consultation to see if we can help with your project."
   },
   {
     question: "Are there any hidden costs associated with your pricing plans?",

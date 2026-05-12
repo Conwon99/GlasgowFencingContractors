@@ -8,7 +8,7 @@ interface ProjectDetailsProps {
 export const ProjectDetails = ({ slug }: ProjectDetailsProps) => {
   const project = getProjectBySlug(slug);
   const category = project?.category === "decking" ? "Decking Services" : "Fencing Services";
-  const location = project?.location || "Ayrshire";
+  const location = project?.location || "Greater Glasgow";
   const date = project?.date || "";
   
   return (

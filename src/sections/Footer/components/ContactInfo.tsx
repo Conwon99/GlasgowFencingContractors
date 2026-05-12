@@ -10,10 +10,10 @@ export const ContactInfo = () => {
           className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
         />
         <a
-          href="mailto:ayrshirefencinggroup@gmail.com"
+          href="mailto:hello@glasgowfencingcontractors.co.uk"
           className="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
         >
-          ayrshirefencinggroup@gmail.com
+          hello@glasgowfencingcontractors.co.uk
         </a>
       </div>
       <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
@@ -31,11 +31,11 @@ export const ContactInfo = () => {
       <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
         <img
           src="https://c.animaapp.com/mhooxuovKXaEfR/assets/67108bda6d31254d6c320ce3_location-01.svg"
-          alt="Location icon - Ayrshire Fencing Group service area"
+          alt="Location icon - Glasgow Fencing Contractors service area"
           className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
         />
         <div className="box-border caret-transparent">
-          Serving Ayrshire, Scotland
+          Serving Greater Glasgow, Scotland
         </div>
       </div>
     </div>

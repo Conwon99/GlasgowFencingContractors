@@ -3,7 +3,7 @@ export const FooterCopyright = () => {
     <div className="items-start box-border caret-transparent flex justify-center">
       <div className="relative text-sm items-start bg-white box-border caret-transparent flex justify-center leading-[21px] mx-2.5 pt-2.5 px-[15px] rounded-t-[10px] md:text-lg md:leading-[27px] md:mx-[42px] md:pt-5 md:px-[30px] md:rounded-t-none">
         <p className="text-gray-900 text-sm box-border caret-transparent leading-[21px] md:text-lg md:leading-[27px]">
-          © {new Date().getFullYear()} Ayrshire Fencing Group. All rights reserved.
+          © {new Date().getFullYear()} Glasgow Fencing Contractors. All rights reserved.
         </p>
         <img
           src="https://c.animaapp.com/mial13ktyN5Jkh/assets/67a313f1157f16b6f57c2e09_shape-01.svg"

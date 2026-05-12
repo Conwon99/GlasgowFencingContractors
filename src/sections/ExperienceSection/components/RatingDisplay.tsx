@@ -2,19 +2,13 @@ export const RatingDisplay = () => {
   return (
     <div className="text-gray-900 items-start box-border caret-transparent gap-x-2.5 flex flex-col justify-start gap-y-2.5 mb-5 md:items-center md:gap-x-[30px] md:flex-row md:gap-y-[30px] md:mb-[50px]">
       <div className="box-border caret-transparent flex items-center gap-x-3 md:gap-x-4">
-        <a
-          href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-border caret-transparent hover:opacity-80"
-          aria-label="Trust a Trader"
-        >
+        <span className="box-border caret-transparent inline-flex" aria-hidden="true">
           <img
             src="/trust.webp"
-            alt="Trust a Trader"
-            className="box-border caret-transparent h-10 w-auto md:h-12"
+            alt=""
+            className="box-border caret-transparent h-10 w-auto md:h-12 opacity-60"
           />
-        </a>
+        </span>
         <a
           href="https://www.facebook.com/100089970103885/"
           target="_blank"
@@ -31,11 +25,11 @@ export const RatingDisplay = () => {
           </svg>
         </a>
         <a
-          href="https://www.google.com/maps/place/Ayrshire+Fencing+Group/@55.619,-4.655,15z/data=!4m6!3m5!1s0x0:0x0!8m2!3d55.619!4d-4.655!16s%2Fg%2F11c0x0x0"
+          href="https://www.google.com/maps/search/?api=1&query=Glasgow%2C%20Scotland%2C%20UK"
           target="_blank"
           rel="noopener noreferrer"
           className="box-border caret-transparent hover:opacity-80"
-          aria-label="Google Business Profile"
+          aria-label="Google Maps — Greater Glasgow"
         >
           <svg
             className="box-border caret-transparent h-10 w-10 md:h-12 md:w-12"

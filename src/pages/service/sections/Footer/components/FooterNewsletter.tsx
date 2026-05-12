@@ -7,7 +7,7 @@ export const FooterNewsletter = () => {
       >
         <img
           src="/logo.webp"
-          alt="Ayrshire Fencing Group Logo"
+          alt="Glasgow Fencing Contractors Logo"
           className="box-border caret-transparent inline-block h-8 max-w-full w-full md:h-9"
         />
       </a>

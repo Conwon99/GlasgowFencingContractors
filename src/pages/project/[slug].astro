@@ -17,9 +17,9 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 
 const project = projects.find((p) => p.slug === slug);
-const pageTitle = project?.seoTitle || "Project - Ayrshire Fencing Group";
-const pageDescription = project?.seoDescription || "Professional fencing and decking project completed by Ayrshire Fencing Group. Quality workmanship and expert installation in Ayrshire.";
-const canonicalUrl = `https://www.ayrshirefencinggroup.com/project/${slug}`;
+const pageTitle = project?.seoTitle || "Project - Glasgow Fencing Contractors";
+const pageDescription = project?.seoDescription || "Professional fencing and decking project completed by Glasgow Fencing Contractors. Quality workmanship and expert installation in Greater Glasgow.";
+const canonicalUrl = `https://www.glasgowfencingcontractors.co.uk/project/${slug}`;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl}>

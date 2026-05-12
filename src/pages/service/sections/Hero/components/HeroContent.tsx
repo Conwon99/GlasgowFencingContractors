@@ -1,28 +1,28 @@
 const formatSlugToTitle = (slug: string) => {
   // Handle special cases for better display - format as "(Service) in (Service Area)"
   const titleMap: Record<string, string> = {
-    "fencing": "Fencing in Ayrshire",
-    "fence-repairs": "Fence Repairs in Ayrshire",
-    "decking": "Decking in Ayrshire",
-    "gates": "Gates in Ayrshire",
-    "sheds": "Sheds in Ayrshire",
-    "garden-rooms": "Garden Rooms in Ayrshire",
-    "custom-fence-construction-irvine": "Custom Fence Construction in Ayrshire",
-    "wood-fence-installation-irvine": "Wood Fence Installation in Ayrshire",
-    "fence-replacement-irvine": "Fence Replacement in Ayrshire",
-    "garden-fence-installation-irvine": "Garden Fence Installation in Ayrshire",
-    "composite-fencing-installation-irvine": "Composite Fencing Installation in Ayrshire",
-    "chainlink-fencing-installation-irvine": "Chainlink Fencing Installation in Ayrshire",
-    "timber-decking-irvine": "Timber Decking in Ayrshire",
+    "fencing": "Fencing in Greater Glasgow",
+    "fence-repairs": "Fence Repairs in Greater Glasgow",
+    "decking": "Decking in Greater Glasgow",
+    "gates": "Gates in Greater Glasgow",
+    "sheds": "Sheds in Greater Glasgow",
+    "garden-rooms": "Garden Rooms in Greater Glasgow",
+    "custom-fence-construction-irvine": "Custom Fence Construction in Greater Glasgow",
+    "wood-fence-installation-irvine": "Wood Fence Installation in Greater Glasgow",
+    "fence-replacement-irvine": "Fence Replacement in Greater Glasgow",
+    "garden-fence-installation-irvine": "Garden Fence Installation in Greater Glasgow",
+    "composite-fencing-installation-irvine": "Composite Fencing Installation in Greater Glasgow",
+    "chainlink-fencing-installation-irvine": "Chainlink Fencing Installation in Greater Glasgow",
+    "timber-decking-irvine": "Timber Decking in Greater Glasgow",
     // Decking sub-pages
-    "composite-decking-irvine": "Composite Decking in Ayrshire",
-    "wooden-decking-irvine": "Wooden Decking in Ayrshire",
+    "composite-decking-irvine": "Composite Decking in Greater Glasgow",
+    "wooden-decking-irvine": "Wooden Decking in Greater Glasgow",
     // Fencing sub-pages
-    "wooden-fencing-irvine": "Wooden Fencing in Ayrshire",
-    "composite-fencing-irvine": "Composite Fencing in Ayrshire",
-    "chainlink-fencing-irvine": "Chainlink Fencing in Ayrshire",
-    "nylofor-fencing-irvine": "Nylofor Fencing in Ayrshire",
-    "concrete-fencing-irvine": "Concrete Fencing in Ayrshire",
+    "wooden-fencing-irvine": "Wooden Fencing in Greater Glasgow",
+    "composite-fencing-irvine": "Composite Fencing in Greater Glasgow",
+    "chainlink-fencing-irvine": "Chainlink Fencing in Greater Glasgow",
+    "nylofor-fencing-irvine": "Nylofor Fencing in Greater Glasgow",
+    "concrete-fencing-irvine": "Concrete Fencing in Greater Glasgow",
   };
   
   if (titleMap[slug]) {
@@ -33,7 +33,7 @@ const formatSlugToTitle = (slug: string) => {
   return slug
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ") + " in Ayrshire";
+    .join(" ") + " in Greater Glasgow";
 };
 
 const getServiceName = (slug: string) => {
@@ -93,7 +93,7 @@ const getSubtitle = (slug: string) => {
   
   const benefits = benefitsMap[slug] || "with professional installation, expert craftsmanship, and quality materials. Transform your property with durable, secure solutions tailored to your needs.";
   
-  return `We provide ${serviceName} in Ayrshire and Glasgow and the surrounding area ${benefits}`;
+  return `We provide ${serviceName} in Greater Glasgow and Glasgow and the surrounding area ${benefits}`;
 };
 
 import { PhoneLink } from "@/components/PhoneLink";
@@ -104,8 +104,8 @@ interface HeroContentProps {
 }
 
 export const HeroContent = ({ slug }: HeroContentProps) => {
-  const title = slug ? formatSlugToTitle(slug) : "Service in Ayrshire";
-  const subtitle = slug ? getSubtitle(slug) : "We provide services in Ayrshire and Glasgow and the surrounding area.";
+  const title = slug ? formatSlugToTitle(slug) : "Service in Greater Glasgow";
+  const subtitle = slug ? getSubtitle(slug) : "We provide services in Greater Glasgow and Glasgow and the surrounding area.";
 
   return (
     <div className="box-border caret-transparent text-center w-full mb-[30px] mx-auto md:w-4/5 md:mb-[50px]">

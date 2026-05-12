@@ -1,0 +1,354 @@
+You are a senior web developer and technical SEO specialist. Your task: implement final technical SEO elements, verify everything is correctly set up, and ensure the site is ready for indexing.
+
+=======================================================
+SITE ARCHITECTURE — PASTE FROM PROMPT 0
+=======================================================
+
+[PASTE YOUR COMPLETE SITE ARCHITECTURE FROM PROMPT 0 HERE]
+
+=======================================================
+PART 1: SITEMAP.XML
+=======================================================
+
+Create a sitemap.xml file that includes ALL pages on the site.
+
+Structure:
+- Use proper XML sitemap format
+- Include lastmod date (use current date)
+- Set priority levels:
+  - Homepage: 1.0
+  - Secondary Category pages: 0.8
+  - Core Service pages: 0.8
+  - Services page: 0.7
+  - Child Service pages: 0.6
+  - About page: 0.5
+  - Contact page: 0.5
+- Include changefreq: monthly for most pages, weekly for homepage
+
+Pages to include (from architecture):
+- Homepage URL
+- /services
+- /about
+- /contact
+- All Secondary Category page URLs
+- All Core Service page URLs
+- All Child Service page URLs (under each category, core service, and general services)
+
+Verify total page count matches PAGE COUNT SUMMARY from architecture.
+
+=======================================================
+PART 2: ROBOTS.TXT
+=======================================================
+
+Create a robots.txt file that:
+- Allows all search engines to crawl all pages
+- Points to sitemap location
+- Blocks any admin, backend, or system routes if they exist
+
+Format:
+
+
+
+User-agent: * Allow: / Sitemap: https://[yourdomain.com]/sitemap.xml
+
+Block system/admin routes if applicable
+
+Disallow: /admin/ Disallow: /api/
+
+
+=======================================================
+PART 3: SCHEMA VERIFICATION
+=======================================================
+
+Review all pages and verify schema markup is correctly implemented:
+
+HOMEPAGE should have:
+- LocalBusiness schema with:
+  - @type: [Appropriate type for PRIMARY CATEGORY]
+  - name: [BUSINESS NAME]
+  - address (streetAddress, addressLocality, addressRegion, postalCode)
+  - telephone: [PHONE NUMBER]
+  - email: [EMAIL]
+  - url: homepage URL
+  - areaServed: [SERVICE AREAS]
+  - priceRange: "$$"
+  - openingHours (if defined)
+  - sameAs: [social media URLs when added]
+- Service schema for primary service
+
+SECONDARY CATEGORY PAGES should have:
+- Service schema with:
+  - @type: Service
+  - serviceType: [Category Name]
+  - provider: reference to LocalBusiness
+  - areaServed: [CITY], [STATE]
+  - description: brief service description
+
+CORE SERVICE PAGES should have:
+- Service schema with:
+  - @type: Service
+  - serviceType: [Service Name]
+  - provider: reference to LocalBusiness
+  - areaServed: [CITY], [STATE]
+  - description: brief service description
+
+CHILD SERVICE PAGES should have:
+- Service schema with:
+  - @type: Service
+  - serviceType: [Service Name]
+  - provider: reference to LocalBusiness
+  - areaServed: [CITY], [STATE]
+
+ABOUT PAGE should have:
+- LocalBusiness or Organization schema
+- Person schema for owner/team members (when real info added)
+
+CONTACT PAGE should have:
+- ContactPage schema or LocalBusiness with contact details
+
+Ensure all schema:
+- Is valid JSON-LD format
+- Is placed in the <head> of each page
+- Has consistent business information across all pages
+- Uses the same @id reference for LocalBusiness throughout
+
+=======================================================
+PART 4: META TAG VERIFICATION
+=======================================================
+
+Verify every page has:
+
+Title Tags:
+- Present and unique on each page
+- Under 60 characters
+- Includes primary keyword for that page
+- Includes city/state where appropriate
+- Format is consistent across site
+
+Meta Descriptions:
+- Present and unique on each page
+- Under 160 characters
+- Compelling and includes call to action
+- Includes primary keyword naturally
+
+H1 Tags:
+- Every page has exactly ONE H1 tag
+- H1 includes page's target keyword
+- H1 matches the page's purpose
+
+Heading Hierarchy:
+- Proper structure: H1 → H2 → H3 (no skipping levels)
+- H2s used for main sections
+- No pages with multiple H1s
+
+=======================================================
+PART 5: INTERNAL LINK AUDIT
+=======================================================
+
+Verify the linking structure matches INTERNAL LINKING MAP from architecture:
+
+HOMEPAGE links to:
+- All Secondary Category pages (via H2 sections)
+- All Core Service pages (via H2 sections)
+- Services page (via "View All Services" link)
+- About page (via navigation)
+- Contact page (via navigation)
+
+SECONDARY CATEGORY PAGES link to:
+- All child services listed under that category
+- Homepage (via natural anchor text in content)
+
+CORE SERVICE PAGES link to:
+- All child services listed under that core service
+- Related secondary category if defined in architecture
+- Homepage (via natural anchor text in content)
+
+CHILD SERVICE PAGES link to:
+- Their parent page (category, core service, or homepage for general services)
+- As defined in INTERNAL LINKING MAP
+
+SERVICES PAGE links to:
+- All Secondary Category pages (via H2 headings)
+- All Core Service pages (via H2 headings)
+- All Child Service pages (via cards)
+
+ALL PAGES link to:
+- Homepage (via logo and navigation)
+- Services, About, Contact (via navigation)
+
+Verify:
+- No broken internal links (404s)
+- No orphan pages (pages with no internal links pointing to them)
+- All links use clean URLs (no anchor tags # unless intentional)
+- All links load destination page at TOP (ScrollToTop working)
+
+=======================================================
+PART 6: MOBILE OPTIMIZATION
+=======================================================
+
+Verify on all pages:
+
+Click-to-Call:
+- All phone numbers are clickable tel: links
+- Phone numbers work on mobile devices
+
+Mobile Navigation:
+- Hamburger menu functions correctly
+- All menu items accessible
+- Menu closes after selection
+
+Floating CTA:
+- "Call Now" floating button visible on mobile
+- Positioned bottom right
+- Doesn't obstruct content
+- Links to tel: number
+
+Touch Targets:
+- All buttons minimum 44x44 pixels
+- Adequate spacing between clickable elements
+- Forms easy to use on mobile
+
+Responsive Design:
+- No horizontal scroll on any page
+- Text readable without zooming
+- Images scale properly
+- Layout adapts to screen sizes
+
+=======================================================
+PART 7: PAGE SPEED ELEMENTS
+=======================================================
+
+Verify/implement:
+
+Images:
+- All images compressed/optimized
+- Images use modern formats where possible (WebP)
+- Images have width and height attributes
+- Lazy loading on images below the fold
+- Alt text on all images
+
+Code:
+- CSS and JS minified
+- No render-blocking resources where avoidable
+- Clean, efficient code
+
+Performance:
+- Target Lighthouse score of 80+ on mobile
+- No excessive third-party scripts
+
+=======================================================
+PART 8: 404 PAGE
+=======================================================
+
+Create a custom 404 error page that:
+
+Design:
+- Matches site design (header, footer, colors)
+- Friendly, helpful message
+- Not generic server error page
+
+Content:
+- Heading: "Page Not Found" or "Oops! That page doesn't exist."
+- Brief message: "The page you're looking for may have moved or doesn't exist."
+- Helpful options:
+  - Link to Homepage
+  - Link to Services page
+  - Phone number with "Or call us directly"
+- Search box (optional)
+
+Do not:
+- Show technical error codes prominently
+- Leave user stranded with no navigation
+
+=======================================================
+PART 9: ADDITIONAL TECHNICAL ELEMENTS
+=======================================================
+
+Canonical Tags:
+- Every page has a self-referencing canonical tag
+- Format: <link rel="canonical" href="[full page URL]" />
+- Prevents duplicate content issues
+
+Favicon:
+- Favicon present
+- Shows in browser tab
+- Placeholder if not provided: <!-- Add your favicon -->
+
+Open Graph Tags (for social sharing):
+- og:title
+- og:description
+- og:image (placeholder if needed)
+- og:url
+- og:type: website
+
+Language:
+- <html lang="en"> on all pages
+
+Viewport:
+- <meta name="viewport" content="width=device-width, initial-scale=1">
+
+=======================================================
+PART 10: FINAL VERIFICATION CHECKLIST
+=======================================================
+
+Run through this checklist and confirm each item:
+
+Site Structure:
+[ ] Total pages created matches PAGE COUNT SUMMARY from architecture
+[ ] All pages accessible via navigation or internal links
+[ ] No orphan pages
+[ ] No broken links
+
+Technical SEO:
+[ ] sitemap.xml created with all pages
+[ ] robots.txt created and properly configured
+[ ] Schema markup on all pages (valid JSON-LD)
+[ ] Meta titles unique and under 60 characters
+[ ] Meta descriptions unique and under 160 characters
+[ ] One H1 per page
+[ ] Proper heading hierarchy throughout
+
+Internal Linking:
+[ ] Homepage links to category and core service pages
+[ ] Category/core service pages link to child pages
+[ ] Child pages link back to correct parent
+[ ] All links load pages at TOP (no scroll issues)
+[ ] No anchor tags (#) in internal links unless intentional
+
+Mobile:
+[ ] Click-to-call working on all phone numbers
+[ ] Mobile navigation working
+[ ] Floating "Call Now" button visible
+[ ] No horizontal scroll
+[ ] Touch targets adequate size
+
+Performance:
+[ ] Images optimized
+[ ] Lazy loading implemented
+[ ] No major render-blocking issues
+
+Pages:
+[ ] 404 page created and styled
+[ ] Canonical tags on all pages
+[ ] Open Graph tags on key pages
+
+Placeholders Documented:
+[ ] GBP embed locations noted
+[ ] Reviews widget location noted
+[ ] Contact form handler noted
+[ ] About page content placeholders noted
+
+=======================================================
+OUTPUT
+=======================================================
+
+After completing all technical SEO tasks, provide:
+
+1. Confirmation that sitemap.xml and robots.txt are created
+2. List of any schema errors found and fixed
+3. List of any broken links found and fixed
+4. List of any pages missing required elements
+5. Final page count verification
+6. Any recommendations for improvement
+
+Generate all technical SEO elements and complete the verification checklist.

@@ -8,9 +8,9 @@ export const ContentSection = ({ slug }: ContentSectionProps) => {
   const project = getProjectBySlug(slug);
 
   // Fallback content if project doesn't have specific content
-  const challenge = project?.challenge || "Every property in Ayrshire presents unique challenges when it comes to fencing and decking installation. This project required careful planning to address specific site conditions, including varying ground levels, existing structures, and the client's vision for their outdoor space. Our team conducted a thorough site assessment to identify potential obstacles and develop a comprehensive solution that would meet both functional and aesthetic requirements.";
+  const challenge = project?.challenge || "Every property in Greater Glasgow presents unique challenges when it comes to fencing and decking installation. This project required careful planning to address specific site conditions, including varying ground levels, existing structures, and the client's vision for their outdoor space. Our team conducted a thorough site assessment to identify potential obstacles and develop a comprehensive solution that would meet both functional and aesthetic requirements.";
   
-  const solution = project?.solution || "Our solution began with a detailed consultation to understand the client's specific needs and preferences. We provided expert advice on material selection, design options, and installation methods that would best suit their property in Ayrshire. Using high-quality materials sourced from trusted suppliers, we ensured durability and longevity for the installation. The installation process was carefully managed with attention to detail at every stage.";
+  const solution = project?.solution || "Our solution began with a detailed consultation to understand the client's specific needs and preferences. We provided expert advice on material selection, design options, and installation methods that would best suit their property in Greater Glasgow. Using high-quality materials sourced from trusted suppliers, we ensured durability and longevity for the installation. The installation process was carefully managed with attention to detail at every stage.";
   
   const solutionPoints = project?.solutionPoints || [
     "Detailed consultation and planning",

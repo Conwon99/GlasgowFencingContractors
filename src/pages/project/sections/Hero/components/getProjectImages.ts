@@ -12,19 +12,19 @@ const projectHeroImages: Record<
 > = {
   "venetian-fencing-gate": {
     src: "/projects/project-1.webp",
-    alt: "Venetian Fencing & Gate installation in Irvine, Ayrshire",
+    alt: "Venetian Fencing & Gate installation in Irvine, Greater Glasgow",
   },
   "concrete-posts-composite-panels-gate": {
     src: "/projects/project-2.webp",
-    alt: "Concrete posts and composite panels with gate installation in Irvine, Ayrshire",
+    alt: "Concrete posts and composite panels with gate installation in Irvine, Greater Glasgow",
   },
   "timber-overlap-coping-double-gates": {
     src: "/projects/project-3.webp",
-    alt: "Timber overlap fencing with coping and double gates in Irvine, Ayrshire",
+    alt: "Timber overlap fencing with coping and double gates in Irvine, Greater Glasgow",
   },
   "timber-wheelchair-access-steps": {
     src: "/projects/project-4.webp",
-    alt: "Timber wheelchair access and steps installation in Stevenston, Ayrshire",
+    alt: "Timber wheelchair access and steps installation in Stevenston, Greater Glasgow",
   },
   "composite-decking-glass-handrails": {
     src: "/projects/project-5.webp",
@@ -32,11 +32,11 @@ const projectHeroImages: Record<
   },
   "timber-decking": {
     src: "/projects/project-6.webp",
-    alt: "Timber decking installation in Stevenston, Ayrshire",
+    alt: "Timber decking installation in Stevenston, Greater Glasgow",
   },
   "composite-fencing-bespoke-gates": {
     src: "/projects/project-7.webp",
-    alt: "47m of composite fencing with 2 bespoke gates featuring dark grey slats, black composite and aluminium posts, black trellis, trims and caps in Ayrshire",
+    alt: "47m of composite fencing with 2 bespoke gates featuring dark grey slats, black composite and aluminium posts, black trellis, trims and caps in Greater Glasgow",
   },
 };
 
@@ -91,21 +91,21 @@ export const getProjectImages = (slug?: string): ProjectImage[] => {
     // Generate alt text
     let altText = "";
     if (slug.includes("venetian-fencing-gate")) {
-      altText = `Venetian fencing and gate project ${number} completed in Irvine, Ayrshire`;
+      altText = `Venetian fencing and gate project ${number} completed in Irvine, Greater Glasgow`;
     } else if (slug.includes("concrete-posts-composite-panels-gate")) {
-      altText = `Concrete posts and composite panels with gate project ${number} completed in Irvine, Ayrshire`;
+      altText = `Concrete posts and composite panels with gate project ${number} completed in Irvine, Greater Glasgow`;
     } else if (slug.includes("timber-overlap-coping-double-gates")) {
-      altText = `Timber overlap fencing with coping and double gates project ${number} completed in Irvine, Ayrshire`;
+      altText = `Timber overlap fencing with coping and double gates project ${number} completed in Irvine, Greater Glasgow`;
     } else if (slug.includes("composite-fencing-bespoke-gates")) {
-      altText = `Composite fencing with bespoke gates project ${number} completed in Ayrshire`;
+      altText = `Composite fencing with bespoke gates project ${number} completed in Greater Glasgow`;
     } else if (slug.includes("timber-wheelchair-access-steps")) {
-      altText = `Timber wheelchair access and steps project ${number} completed in Stevenston, Ayrshire`;
+      altText = `Timber wheelchair access and steps project ${number} completed in Stevenston, Greater Glasgow`;
     } else if (slug.includes("composite-decking-glass-handrails")) {
       altText = `Composite decking with glass and handrails project ${number} completed in Kings Park, Glasgow`;
     } else if (slug.includes("timber-decking")) {
-      altText = `Timber decking project ${number} completed in Stevenston, Ayrshire`;
+      altText = `Timber decking project ${number} completed in Stevenston, Greater Glasgow`;
     } else {
-      altText = `Fencing and decking project ${number} completed in Ayrshire`;
+      altText = `Fencing and decking project ${number} completed in Greater Glasgow`;
     }
 
     images.push({

@@ -7,7 +7,7 @@ export const ExperienceImage = () => {
       <div className="relative">
         <img
           src="/ABOUTMCINES.webp"
-          alt="Ayrshire Fencing Group team working on fencing and decking projects in Ayrshire"
+          alt="Glasgow Fencing Contractors team working on fencing and decking projects in Greater Glasgow"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full scale-[1.03587px] md:scale-[1.03477px]"
         />
         <div 

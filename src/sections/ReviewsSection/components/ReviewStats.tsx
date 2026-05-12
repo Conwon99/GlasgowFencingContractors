@@ -1,12 +1,7 @@
 export const ReviewStats = () => {
   return (
     <div className="box-border caret-transparent flex flex-col items-center justify-center gap-6 mb-[40px] md:mb-[50px] md:flex-row md:gap-8">
-      <a
-        href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="box-border caret-transparent flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors hover:decoration-transparent"
-      >
+      <div className="box-border caret-transparent flex items-center gap-3 p-4 bg-gray-800 rounded-lg">
         <div className="box-border caret-transparent flex items-center gap-2">
           <div className="text-green-500 text-2xl font-bold box-border caret-transparent">
             ★★★★★
@@ -17,15 +12,15 @@ export const ReviewStats = () => {
             16+ 5 Star Reviews
           </div>
           <div className="text-gray-300 text-sm box-border caret-transparent">
-            from Trust a Trader
+            from satisfied customers
           </div>
         </div>
         <img
           src="/trust.webp"
-          alt="Trust a Trader Logo"
-          className="box-border caret-transparent h-8 w-auto"
+          alt=""
+          className="box-border caret-transparent h-8 w-auto opacity-70"
         />
-      </a>
+      </div>
       <a
         href="https://www.facebook.com/100089970103885/"
         target="_blank"

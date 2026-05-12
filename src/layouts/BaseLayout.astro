@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { CANONICAL_PHONE_TEL } from '@/utils/phoneTracking';
 
 interface Props {
   title: string;
@@ -11,20 +12,24 @@ interface Props {
 
 const { title, description, canonical, keywords, ogImage } = Astro.props;
 
-// Canonical phone number for SEO and structured data
-const CANONICAL_PHONE = "07926 592704";
-const CANONICAL_PHONE_TEL = "+447926592704";
+const SITE_EMAIL = "hello@glasgowfencingcontractors.co.uk";
 
 // Default meta description (optimized to 120-160 characters)
-const defaultDescription = "Professional fencing and decking services in Ayrshire. Expert installation, quality materials, free quotes. Fully insured contractors with 13+ years experience.";
+const defaultDescription = "Professional fencing and decking across Greater Glasgow. Expert installation, quality materials, free quotes. Fully insured contractors with 13+ years experience.";
 
 // Default keywords
-const defaultKeywords = "fence contractor ayrshire, fencing ayrshire, decking ayrshire, fence installation ayrshire, fence repairs ayrshire, gates ayrshire, sheds ayrshire, garden rooms ayrshire, wooden fencing ayrshire, composite fencing ayrshire, chainlink fencing ayrshire, timber decking ayrshire, composite decking ayrshire, fencing glasgow, decking glasgow";
+const defaultKeywords = "fence contractor glasgow, fencing glasgow, decking glasgow, fence installation glasgow, fence repairs glasgow, gates glasgow, sheds glasgow, garden rooms glasgow, wooden fencing glasgow, composite fencing glasgow, chainlink fencing glasgow, timber decking glasgow, composite decking glasgow, bishopbriggs fencing, robroyston fencing";
 
 // Generate canonical URL
-const siteUrl = "https://www.ayrshirefencinggroup.com";
+const siteUrl = "https://www.glasgowfencingcontractors.co.uk";
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
+
+const areaServedNames = [
+  "Robroyston", "Bishopbriggs", "Lenzie", "Stepps", "Moodiesburn", "Millerston", "Chryston", "Kirkintilloch", "Uddingston", "Bothwell",
+  "Baillieston", "Garrowhill", "Mount Vernon", "Carmyle", "Cambuslang", "Rutherglen", "Burnside", "Blantyre", "Hamilton", "Bellshill", "Motherwell", "Coatbridge", "Airdrie", "Cumbernauld", "Gartcosh",
+];
+const areaServed = areaServedNames.map((name) => ({ "@type": "City", name }));
 ---
 
 <!doctype html>
@@ -35,10 +40,10 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
     <title>{title}</title>
     <meta name="description" content={description || defaultDescription} />
     <meta name="keywords" content={keywords || defaultKeywords} />
-    <meta name="author" content="Ayrshire Fencing Group" />
+    <meta name="author" content="Glasgow Fencing Contractors" />
     <meta name="language" content="English" />
-    <meta name="geo.region" content="GB-AYS" />
-    <meta name="geo.placename" content="Ayrshire, Scotland" />
+    <meta name="geo.region" content="GB-SCT" />
+    <meta name="geo.placename" content="Greater Glasgow, Scotland" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     
     <!-- Canonical URL -->
@@ -55,7 +60,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={defaultOgImage} />
-    <meta property="og:site_name" content="Ayrshire Fencing Group" />
+    <meta property="og:site_name" content="Glasgow Fencing Contractors" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -77,57 +82,24 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
-      "name": "Ayrshire Fencing Group",
-      "description": "Fully qualified and insured fencing and decking specialists. Fencing, Fence Repairs, Decking, Gates, Sheds, Garden Rooms across Ayrshire. Over 13 years' experience.",
+      "name": "Glasgow Fencing Contractors",
+      "description": "Fully qualified and insured fencing and decking specialists serving Greater Glasgow. Fencing, fence repairs, decking, gates, sheds, and garden rooms. Over 13 years' experience.",
       "telephone": CANONICAL_PHONE_TEL,
-      "email": "ayrshirefencinggroup@gmail.com",
+      "email": SITE_EMAIL,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "",
-        "addressLocality": "Irvine",
-        "addressRegion": "North Ayrshire",
+        "addressLocality": "Glasgow",
+        "addressRegion": "Scotland",
         "postalCode": "",
         "addressCountry": "GB"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "55.6194",
-        "longitude": "-4.6551"
+        "latitude": "55.8642",
+        "longitude": "-4.2518"
       },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Ayrshire"
-        },
-        {
-          "@type": "City",
-          "name": "Irvine"
-        },
-        {
-          "@type": "City",
-          "name": "Kilmarnock"
-        },
-        {
-          "@type": "City",
-          "name": "Ayr"
-        },
-        {
-          "@type": "City",
-          "name": "Troon"
-        },
-        {
-          "@type": "City",
-          "name": "Prestwick"
-        },
-        {
-          "@type": "City",
-          "name": "Kilwinning"
-        },
-        {
-          "@type": "City",
-          "name": "Glasgow"
-        }
-      ],
+      "areaServed": areaServed,
       "serviceType": [
         // Main Services
         "Fencing",
@@ -182,7 +154,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "itemOffered": {
               "@type": "Service",
               "name": "Fencing",
-              "description": "Professional fencing installation services across Ayrshire and Glasgow"
+              "description": "Professional fencing installation across Greater Glasgow and surrounding towns"
             }
           },
           {
@@ -472,7 +444,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
           }
         ]
       },
-      "url": Astro.url.origin,
+      "url": siteUrl,
       "priceRange": "$$",
       "aggregateRating": {
         "@type": "AggregateRating",

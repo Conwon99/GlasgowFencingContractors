@@ -4,7 +4,7 @@ export const WhyChooseImage = () => {
       <img
         src="/projects/project-2.webp"
         sizes="(max-width: 479px) 94vw, (max-width: 991px) 96vw, (max-width: 1279px) 95vw, (max-width: 1919px) 96vw, 1480px"
-        alt="Why Choose Ayrshire Fencing Group"
+        alt="Why Choose Glasgow Fencing Contractors"
         className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
       />
       <div className="absolute bg-slate-50 box-border caret-transparent z-[2] pr-2.5 pt-2.5 rounded-tr-[30px] left-[0%] bottom-[0%]">

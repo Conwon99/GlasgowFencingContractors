@@ -9,7 +9,7 @@ export const Logo = () => {
     >
       <img
         src="/logo.webp"
-        alt="Ayrshire Fencing Group Logo"
+        alt="Glasgow Fencing Contractors Logo"
         className="box-border caret-transparent inline-block h-6 max-w-full w-full md:h-7"
       />
     </Link>
