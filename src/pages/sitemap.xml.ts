@@ -6,7 +6,7 @@
 import type { APIRoute } from 'astro';
 import { projects } from '@/data/projects';
 
-const siteUrl = 'https://www.glasgowfencingcontractors.co.uk';
+const siteUrl = 'https://www.ayrshirefencinggroup.com';
 
 // All static pages
 const staticPages = [

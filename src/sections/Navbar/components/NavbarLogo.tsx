@@ -2,14 +2,12 @@ export const NavbarLogo = () => {
   return (
     <a
       href="/"
-      aria-label="home"
+      aria-label="Ayrshire Fencing Group home"
       className="relative text-zinc-800 box-border caret-transparent block float-left justify-self-start mr-auto hover:decoration-transparent"
     >
-      <img
-        src="/logo.webp"
-        alt="Glasgow Fencing Contractors Logo"
-        className="box-border caret-transparent inline-block h-20 max-w-full w-full md:h-24 lg:h-28 scale-[1.7] md:scale-[1.9] lg:scale-[2.1] origin-left"
-      />
+      <span className="inline-block text-2xl font-semibold leading-none tracking-tight md:text-3xl lg:text-4xl">
+        Ayrshire Fencing Group
+      </span>
     </a>
   );
 };
